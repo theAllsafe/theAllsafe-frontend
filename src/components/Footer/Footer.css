@@ -1,0 +1,77 @@
+footer {
+  border-top: 2px solid #d5d5d5;
+  font-family: "Roboto" sans-serif;
+}
+
+.f_box {
+  width: 20%;
+  float: left;
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+.f_box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.f_box h4 {
+  font-weight: 800;
+  color: white;
+  font-size: 20px;
+}
+
+.f_box ul li {
+  /* padding-bottom: 5px; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+  color: white;
+}
+
+.f_box ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.visa_card {
+  /* padding: 50px; */
+  margin-top: 2em;
+  margin-left: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #323232;
+  font-size: 16px;
+}
+
+.footerbg {
+  background-color: #172337;
+  padding: 2rem;
+  color: white;
+}
+
+.clr-white {
+  color: white;
+}
+
+hr {
+  background-color: white;
+}
+
+.display-inline {
+  display: inline-block;
+}
+.menu-drop {
+  top: -160px;
+  left: 0px;
+}
+.dropdown-item {
+  font-size: 50px;
+}

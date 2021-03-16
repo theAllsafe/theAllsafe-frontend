@@ -1,0 +1,12 @@
+.pro_add img {
+    margin-top: 50px;
+}
+
+.pro_add img:first-child {
+    margin-top: 0px;
+}
+
+.pro_add {
+    float: right;
+    margin-top: 0px;
+}

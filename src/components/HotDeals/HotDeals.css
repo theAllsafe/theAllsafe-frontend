@@ -1,0 +1,62 @@
+.hot-deals {
+    padding: 30px 30px 50px 30px;
+}
+
+.hot-deals a {
+    text-decoration: none;
+}
+
+.hot-deals {
+    margin-top: 5em;
+}
+
+.hot-deals .card {
+    margin: 20px 0;
+    border: 0px
+}
+
+.hot-deals .card-footer p {
+    margin-top: 25px;
+}
+
+.hot-deals .card-footer .sidebtn {
+    margin-top: 18px;
+}
+
+.hot-deals .card-footer {
+    background-color: white;
+}
+
+.sidebtn i {
+    color: white;
+}
+
+.mybutton:hover i {
+    color: #346AA0
+}
+
+.basic:hover {
+    background-color: white;
+    color: #346AA0
+}
+
+.mybtn {
+    border: 1px solid lightgrey;
+    padding: 10px 25px;
+    color: black;
+}
+
+.mybtn:hover {
+    background-color: #346AA0;
+    color: white;
+}
+
+.basic {
+    background-color: #346aa0;
+    color: white;
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(112, 105, 105, 0.2);
+}

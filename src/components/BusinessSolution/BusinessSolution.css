@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.newBusiness {
+  font-family: "Roboto", sans-serif;
+}
+.business-content {
+  padding: 15px;
+}
+
+.para {
+  font-size: 16px;
+  font-weight: 10px;
+  margin-bottom: 2em;
+  line-height: 25px;
+  padding: 0;
+  margin-top: 0px;
+}
+
+.para2 {
+  font-size: 16px;
+  font-weight: 10px;
+  margin-bottom: 2em;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.business-solution {
+  padding: 10px 40px 50px 50px;
+}
+
+/* .heading {
+    letter-spacing: 6px;
+    text-shadow: 0 2px 8px rgba(38, 171, 226, .9);
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 30px;
+} */
+
+.business-solution a {
+  text-decoration: none;
+}
+
+.business-solution {
+  margin-top: 7em;
+}
+
+.business-heading {
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.overview-heading {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.business-btn {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 0 !important;
+  color: black;
+  background-color: white;
+}
+
+.active,
+.business-btn:hover {
+  background-color: #316698;
+  color: white;
+}
+
+.lastdiv {
+  float: right;
+}
+
+.percentage {
+  display: inline;
+  color: green;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+.del {
+  display: inline;
+}
+
+.bus {
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 1px solid lightgray;
+  color: white;
+  background-color: #316698;
+  display: inline;
+}
+
+.bus:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #316698;
+}
+
+/* .business-btn:hover {
+    color: black;
+    background-color: white;
+} */
+
+.business-btn:hover i {
+  color: black;
+}
+
+.item {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.items {
+  padding: 20px;
+  list-style-type: none;
+  font-size: 30px;
+  color: grey;
+}
+
+.neww {
+  display: inline-flex;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.neww2 {
+  display: inline-flex;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.over {
+  background-color: white;
+  color: black;
+  padding-top: 40px;
+  padding-left: 33px;
+}
+
+.benefits {
+  line-height: 30px;
+}
+
+.features {
+  background-color: white;
+  color: black;
+}
+
+.features-cards {
+  padding-top: 20px;
+
+  padding-left: 10px;
+}
+
+.card {
+  border: none;
+}
+
+.lastcard {
+  margin-top: 90px;
+  font-size: 30px;
+}
+
+.ver {
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.relateddeals {
+  background-color: white;
+  padding-top: 30px;
+}
+
+.card-title {
+  color: black;
+}
+
+.nav-link {
+  color: grey;
+  font-weight: lighter;
+}
+
+.nav-link .active {
+  color: black;
+}
+
+.business h3 {
+  letter-spacing: 6px;
+  font-size: 50px;
+  text-shadow: 0 2px 8px rgba(38, 171, 226, 0.9);
+  font-weight: 800;
+  padding-bottom: 50px;
+  font-family: "Arial Black";
+}
+
+.p_main_sec {
+  padding: 30px 30px 50px 30px;
+  background-color: white;
+}
+
+.p_main_sec .heading_p {
+  color: #717070;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.p_main_sec .card {
+  margin: 20px 0;
+  border: 0px;
+}
+
+.pro_sale {
+  background: #f8c73d;
+  color: black;
+  position: absolute;
+  top: -13px;
+  left: -9px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 3px 11px;
+  border-radius: 3px;
+}
+
+.p_main_sec .card .card-body {
+  height: 230px;
+}
+
+.p_main_sec .card p {
+  margin-bottom: 12px;
+}
+
+.p_main_sec .card .card-footer {
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.c_btn_left {
+  width: 50%;
+  float: left;
+  background: #3f80bf;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  text-decoration: none;
+  border: 2px solid #3f80bf;
+}
+
+.c_btn_left:hover {
+  color: #3f80bf;
+  background: transparent;
+}
+
+.c_btn_right {
+  width: 50%;
+  float: left;
+  background: #32679a;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  text-decoration: none;
+  border: 2px solid #32679a;
+}
+
+.c_btn_right:hover {
+  color: #32679a;
+  background: transparent;
+}
+
+.featur {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: gray;
+  background-size: 200% auto;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.featur1 {
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+.releasehistory {
+  background-color: white;
+  color: black;
+}
+
+th {
+  padding-left: 40px;
+  font-weight: lighter;
+  color: grey;
+  float: left;
+}
+
+td {
+  padding-left: 40px;
+  padding-top: 15px;
+  float: left;
+}
+
+.th2 {
+  padding-left: 80px;
+}
+
+.th3 {
+  border-top: 2px solid lightgrey;
+}
+
+.features-cards .card {
+  /* margin-right: 20px; */
+  box-shadow: 0px 5px 5px 2px rgba(2, 2, 2, 0.2);
+}
+
+.overview-content {
+  box-shadow: 0px 5px 5px 2px rgba(2, 2, 2, 0.2);
+}

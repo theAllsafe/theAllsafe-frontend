@@ -1,0 +1,419 @@
+header .head-1 {
+  background: #346a9f;
+  color: #fff;
+  padding: 5px 0;
+}
+
+header p {
+  color: #acb2bd;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+header .head-2 {
+  padding: 10px 0;
+  padding-bottom: 0;
+}
+
+header .head-2 .logo img {
+  width: 150px;
+}
+
+header .head-3 ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  float: right;
+}
+
+header .head-3 ul li {
+  display: inline;
+  padding: 0 10px;
+}
+
+header .head-3 ul li a .fa {
+  padding-right: 10px;
+  font-size: 22px;
+  padding: 12px 0;
+  color: #346a9f;
+  position: relative;
+  top: 2px;
+}
+
+header .head-3 ul li a {
+  color: black;
+  font-weight: 600;
+}
+
+header .head-3 ul li a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.closebtn {
+  font-size: 100%;
+  color: white;
+}
+
+.com-abt a {
+  color: #346a9f !important;
+}
+
+.com-abt a:hover {
+  color: red !important;
+}
+
+.com-info a .fa {
+  color: green !important;
+}
+
+.com-info a {
+  color: green !important;
+}
+
+.com-info a:hover {
+  color: red !important;
+}
+
+header .navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+header .navbar-dark .nav-item {
+  padding: 7px 5px;
+  width: 10% !important;
+}
+
+header .navbar-dark .navbar-nav a {
+  color: #346a9f !important;
+  font-size: 15px;
+  font-weight: 560;
+  text-align: center;
+  padding: 20px 20px 10px !important;
+  border: 1px solid hsla(0, 0%, 71.8%, 0.8);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  line-height: 12pt;
+  font-weight: 300;
+  height: 100%;
+}
+
+header .navbar-dark .navbar-nav a:hover {
+  box-shadow: 0px 0px 6px 1px #346a9f;
+}
+
+header .navbar-dark .navbar-nav .dropdown-menu a {
+  font-size: 15px;
+  padding: 10px !important;
+  height: auto !important;
+}
+
+header .navbar-nav .dropdown-menu {
+  padding: 0;
+  min-width: -webkit-fill-available !important;
+}
+
+header .navbar-dark .navbar-nav a:hover {
+  color: #346a9f;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav-a:hover {
+  text-decoration: none;
+}
+.navbar-expand-md .navbar-nav .nav-link img {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 32px;
+  height: 32px;
+}
+
+header .navbar-expand-md .navbar-nav {
+  width: 100%;
+}
+
+header .dropdown-toggle::after {
+  display: none;
+}
+
+header .show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+header .dropdown-menu {
+  margin-top: 0;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgb(209 127 104);
+  border-color: rgb(209 127 104);
+}
+
+.new-info {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 300;
+  background: #f8c73d;
+  padding: 0;
+  padding: 0px 15px 0px 4px;
+  color: #464343;
+  top: 0;
+  border-radius: 2px;
+  line-height: 18px;
+  left: 0;
+}
+
+.logo_menu ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 10px 0;
+  text-decoration: none;
+  float: right;
+}
+
+.logo_menu ul li {
+  padding: 0 15px;
+}
+
+.logo_menu ul li img {
+  width: 22px;
+  margin-right: 5px;
+  position: relative;
+  top: -4px;
+}
+
+.logo_menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.logo_menu ul li a:hover {
+  color: red;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  text-align: left;
+  z-index: 1;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  right: 25px;
+}
+
+.has-search .form-control {
+  border-radius: 20px;
+}
+
+i {
+  color: #2463a1;
+}
+
+/*.gold-clr{*/
+
+/*     background-color: #F8C73D;*/
+
+/*    color: black;*/
+
+/*}*/
+
+/*.form-control-borderless {*/
+
+/*    border: none;*/
+
+/*}*/
+
+/*.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {*/
+
+/*    border: none;*/
+
+/*    outline: none;*/
+
+/*    box-shadow: 1px 2px 2px 2px lightgray;*/
+
+/*    height: 50%;*/
+
+/*}*/
+
+/*
+Credits:
+Code snippet by @maridlcrmn (Follow me on Twitter)
+Images by Nike.com (http://www.nike.com/us/en_us/)
+Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
+*/
+
+.navbar-brand {
+  width: 70px;
+  height: 50px;
+  background: url("http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png")
+    no-repeat center center;
+  background-size: 50px;
+}
+
+.dropdown-item {
+  text-align: left;
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-list {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-list > li {
+  padding: 20px 15px 15px;
+  border-left: 1px solid #eee;
+}
+
+.nav-list > li:last-child {
+  border-right: 1px solid #eee;
+}
+
+.nav-list > li > a:hover {
+  text-decoration: none;
+}
+
+.nav-list > li > a > span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mega-dropdown {
+  position: static !important;
+}
+
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.oneview:hover {
+  border-bottom: 2px solid #2463a1;
+}
+
+.dropdown-oneview {
+  float: left;
+  overflow: hidden;
+  width: auto;
+}
+
+.dropdown-oneview .dropbtn-oneview {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #2463a1;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.dropdown-content-oneview {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 220%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 22px;
+  /* z-index: 1; */
+}
+
+.dropdown-content-oneview .megamenu-heading {
+  background: white;
+  padding: 16px;
+  color: black;
+}
+
+.dropdown-oneview:hover .dropdown-content-oneview {
+  display: block;
+}
+.dropdown-content-oneview .row {
+  width: auto;
+  padding: 20px;
+}
+.dropdown-content-oneview .row h6 {
+  color: #2463a1;
+  border-bottom: 2px solid #2463a1;
+  padding-bottom: 3px;
+  width: fit-content;
+}
+
+.column {
+  float: left;
+  width: auto;
+  padding: 20px;
+
+  /* background-color: #ccc; */
+  /* height: 250px; */
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  line-height: 13px;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,127 @@
+.blog_sec {
+    padding: 50px 30px;
+}
+
+.blog_sec .card {
+    background: rgba(235, 240, 254, 1);
+    border: 0;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+.blogs-heading {
+    letter-spacing: 1px;
+    /*text-shadow: 0 2px 8px rgba(38, 171, 226, .9);*/
+    color: black;
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.industry-home-box {
+    width: 85%;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    background: var(--white-color);
+    background-color: white;
+}
+
+
+/* .industry-home-box:hover .onhovdiv {
+    width: 85%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: yellow;
+} */
+
+.industry-home-box:hover {
+    box-shadow: 0 0 12px lightgray;
+    border-bottom: 8px solid #F7CD3F;
+    box-sizing: border-box;
+    height: 70%;
+}
+
+.industry-home-box:hover i {
+    color: #F7CD3F;
+}
+
+#education-box:hover i {
+    color: #0883C3;
+}
+
+#education-box:hover {
+    border-bottom: 8px solid #0883C3;
+}
+
+#shopping-box:hover i {
+    color: #6C5EA6
+}
+
+#shopping-box:hover {
+    border-bottom: 8px solid #6C5EA6;
+}
+
+#logistic-box:hover i {
+    color: #269D38;
+}
+
+#logistic-box:hover {
+    border-bottom: 8px solid #269D38;
+}
+
+#travel-box:hover i {
+    color: #F5BD00;
+}
+
+#travel-box:hover {
+    border-bottom: 8px solid #F5BD00;
+}
+
+#media-box:hover i {
+    color: #269D38;
+}
+
+#media-box:hover {
+    border-bottom: 8px solid #269D38;
+}
+
+#estate-box:hover i {
+    color: #F5BD00;
+}
+
+#estate-box:hover {
+    border-bottom: 8px solid #F5BD00;
+}
+
+#colleges-box:hover i {
+    color: #6C5EA6;
+}
+
+#colleges-box:hover {
+    border-bottom: 7px solid #6C5EA6;
+}
+
+.industry-home-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px
+}
+
+.industry-home-box img {
+    width: 75%
+}
+
+.industry-home-box:hover a {
+    border-radius: 0;
+    background: #272727;
+    transition: .3s all ease
+}
+
+.white-i {
+    color: #272727;
+}

@@ -1,0 +1,47 @@
+.terms {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.date {
+  color: #3bb497;
+  font-family: GothamPro, serif;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.date-updated {
+  margin-top: 8px;
+  color: #3bb497;
+  font-family: GothamPro, serif;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #1a1e1d;
+  font-family: "GothamPro Medium", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.text {
+  color: black;
+  font-family: GothamPro, serif;
+  /* font-size: px;
+  line-height: 20px; */
+  margin-bottom: 32px;
+}
+
+.list-txt {
+  font-family: GothamPro, serif;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+  text-decoration: underline;
+}

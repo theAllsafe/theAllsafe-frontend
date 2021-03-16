@@ -1,0 +1,52 @@
+.TopHeader {
+    text-align: center;
+    background-color: #346A9F;
+    color: #FFF;
+    padding: 0.1px;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+    font-size: 16px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa {
+    color: #346A9F;
+    font-size: 22px;
+}
+
+.header-part {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.NavigationItems {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -24px;
+}
+
+.NavigationItems ul li a:hover {
+    text-decoration: none;
+    color: #346a9f;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.rightNav {
+    padding-right: 25px;
+}
