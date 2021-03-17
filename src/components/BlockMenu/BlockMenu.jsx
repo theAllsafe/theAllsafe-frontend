@@ -14,140 +14,194 @@ import icon10 from './icon/Others.png';
 const BlockMenu = () => {
   return (
     <div className="blockmenu container-fluid">
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={Business} className="img-fluid" />
+      <ul class="menu">
+        <li className="box">
+          <img src={Business} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Business Solution</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">Inventory Management</li>
-              <li class="dropdown_item-2">POS System</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon2} className="img-fluid" />
-            <p>E-Commerce</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">Single Vendor</li>
-              <li class="dropdown_item-2">Multi Vendor</li>
-              <li class="dropdown_item-3"> Grocery Store - Single Vendor</li>
-              <li class="dropdown_item-3"> Grocery Store - Multi Vendor</li>
-              <li class="dropdown_item-3"> Flower and Gifts</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Single Vendor</a>
+            </li>
+            <li>
+              <a href="#">Multi Vendor</a>
+            </li>
+            <li>
+              <a href="#">Grocery Store - Single Vendor</a>
+            </li>
+            <li>
+              <a href="#">Grocery Store - Multi Vendor</a>
+            </li>
+            <li>
+              <a href="#">Flower and Gifts</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon3} className="img-fluid" />
+      <ul class="menu">
+        <li className="box">
+          <img src={icon2} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Education</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1"> School Management System</li>
-              <li class="dropdown_item-2"> Library Management System</li>
-              <li class="dropdown_item-3"> E-Class Sharing Portal</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon4} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">School Management System</a>
+            </li>
+            <li>
+              <a href="#">Library Management System</a>
+            </li>
+            <li>
+              <a href="#"> E-Class Sharing Portal</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon3} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Health Care</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">Hospital Management System</li>
-              <li class="dropdown_item-2"> Pharma</li>
-              <li class="dropdown_item-3"> POS Chemist</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon5} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Hospital Management System</a>
+            </li>
+            <li>
+              <a href="#">Library Management System</a>
+            </li>
+            <li>
+              <a href="#"> E-Class Sharing Portal</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon4} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
+            <p>Health Care</p>
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Hospital Management System</a>
+            </li>
+            <li>
+              <a href="#"> Pharma</a>
+            </li>
+            <li>
+              <a href="#">POS Chemist</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon5} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Human Resource</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1"> Job Portal</li>
-              <li class="dropdown_item-2"> HR Management System</li>
-              <li class="dropdown_item-3"> News & Blogs</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon6} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#"> Job Portal</a>
+            </li>
+            <li>
+              <a href="#"> HR Management System</a>
+            </li>
+            <li>
+              <a href="#">News &amp; Blogs</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon6} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>News &amp; Blogs</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">News Portal</li>
-              <li class="dropdown_item-2"> Blog Portal</li>
-              <li class="dropdown_item-3"> Sarkari Job Portal</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon7} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">News Portal</a>
+            </li>
+            <li>
+              <a href="#">Blog Portal</a>
+            </li>
+            <li>
+              <a href="#">Sarkari Job Portal</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon7} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Online Reservation</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1"> Cab Booking</li>
-              <li class="dropdown_item-2"> Bus Booking</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon8} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Cab Booking</a>
+            </li>
+            <li>
+              <a href="#">Bus Booking</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon8} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Hotel &amp; Restaurant</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1"> Hotel Booking</li>
-              <li class="dropdown_item-2"> Booking Integration</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon9} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Hotel Booking</a>
+            </li>
+            <li>
+              <a href="#">Booking Integration</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon9} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>OTT Platform</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">Multi Video Platform</li>
-              <li class="dropdown_item-2"> Like TVideo</li>
-              <li class="dropdown_item-3">Item 3</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div className="x">
-        <ul class="menu">
-          <li class="dropdown dropdown-6" id="box">
-            <img src={icon10} className="img-fluid" />
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Multi Video Platform</a>
+            </li>
+            <li>
+              <a href="#">Like TVideo</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li className="box">
+          <img src={icon10} className="img-fluid" />
+          <div style={{ padding: '0 5px 0 5px' }}>
             <p>Others</p>
-            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-              <li class="dropdown_item-1">Item 1</li>
-              <li class="dropdown_item-2">Item 2</li>
-              <li class="dropdown_item-3">Item 3</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+          </div>
+          <ul className="submenu">
+            <li>
+              <a href="#">Item 1</a>
+            </li>
+            <li>
+              <a href="#">Item 2</a>
+            </li>
+            <li>
+              <a href="#">Item 3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   );
 };
