@@ -74,16 +74,16 @@ function Applications() {
         </div>
       </div>
 
-      <div className="bottomSection container">
+      <div className="bottomSection container pt-5">
         <div className="b_left1">
           <h1>Apps Features & Support Which Give You More Freedom</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus
-            eleifend tortor, vel molestie orci feugiat sit amet. We are
-            committed to providing quality IT Services. Vesti at bulum nec odio
-            aea the dumm ipsumm ipsum. Our benefits are endless for local IT
-            Companies & Startups. We are committed to providing quality IT
-            Services.
+            eleifend tortor, vel molestie orci feugiat sit amet. <br />
+            We are committed to providing quality IT Services. Vesti at bulum
+            nec odio aea the dumm ipsumm ipsum. <br /> Our benefits are endless
+            for local IT Companies & Startups. <br />
+            We are committed to providing quality IT Services.
           </p>
           <button className="btn btn-primary">View More</button>
         </div>

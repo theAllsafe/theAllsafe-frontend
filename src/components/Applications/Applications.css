@@ -141,3 +141,155 @@
   background-color: #0156f5;
   transition: all ease-in 0.3s;
 }
+
+@media only screen and (max-width: 600px) {
+  .top {
+    height: 100%;
+    background-image: url('./banner.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  .top_left {
+    padding-top: 200px;
+    text-align: center;
+  }
+  .top_left h1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .top_right {
+    padding-top: 70px;
+    padding-left: 0px;
+  }
+  .top_right img {
+    height: 300px;
+  }
+  .top_c {
+    font-size: 18px;
+    color: #fff;
+  }
+  .startBtn {
+    padding: 8px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  /* middle section */
+  .middleSection {
+    padding-top: 100px;
+  }
+  .middleSection h1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .middleSection .app_icon_container {
+    padding-top: 70px;
+  }
+  .middleSection .app_icon_container .icon {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 20px;
+    margin: 0 auto 15px auto;
+  }
+  .app_icon_container h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* bottom section */
+  .bottomSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .bottomSection h1 {
+    font-size: 30px;
+  }
+  .bottomSection p {
+    font-size: 18px;
+    color: rgb(124, 124, 124);
+    line-height: 1.3em;
+  }
+  .b_left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottomSection .b_right img {
+    object-fit: cover;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .bottomSection .b_left1 {
+    text-align: center;
+    margin-top: -50px;
+  }
+  .bottomSection .b_right2 img {
+    object-fit: cover;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  /* footer section */
+
+  .footerBanner {
+    background-color: #2695f9;
+    height: 600px;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+  .fb_left h1 {
+    font-size: 33px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .fb_left h4 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .fb_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .fb_container .btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fb_container .store {
+    padding: 5px 20px;
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #0173f5;
+    transition: all ease-in 0.3s;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .fb_container .store i {
+    font-size: 30px;
+    padding-right: 10px;
+    color: #fff;
+  }
+  .fb_container .store:hover {
+    background-color: #0156f5;
+    transition: all ease-in 0.3s;
+  }
+}
