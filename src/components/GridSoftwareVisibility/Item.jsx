@@ -5,7 +5,7 @@ const Item = ({ image }) => {
   return (
     <>
       <div className="item">
-        <img src={image} className="img-fluid" alt="product image" />
+        <img src={image} alt="product image" />
         <div className="product">
           <div className="iconContainer">
             {[1, 2, 3, 4, 5].map((el) => (

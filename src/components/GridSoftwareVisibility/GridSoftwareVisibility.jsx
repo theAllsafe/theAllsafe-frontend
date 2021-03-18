@@ -12,6 +12,8 @@ const GridSoftwareVisibility = () => {
           {data.map((el) => (
             <Item key={el.id} image={el.image} />
           ))}
+          <div className="rightGrid"></div>
+          <div className="rightGrid2"></div>
         </div>
       </div>
     </div>

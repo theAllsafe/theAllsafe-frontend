@@ -1,258 +1,120 @@
-import React from "react";
-import "./Applications.css";
+import React from 'react';
+import './Applications.css';
+import Footer from '../Footer/Footer';
+import phone from './phone.png';
+import NavBar from '../NavBar/NavBar';
+import appdisplay from './draw.png';
+import phone2 from './ba-6.png';
+import icecream from './image-13.png';
 
-import Footer from "../Footer/Footer";
-import phone from "./icons/application/cut-top-img.png";
-import group from "./icons/Group3644.png";
-import group1 from "./icons/Group3680.png";
-import group3 from "./icons/Group3681.png";
-import NavBar from "../NavBar/NavBar";
 function Applications() {
   return (
-    <div>
+    <div className="application">
       <NavBar />
       {/* <section className="application"> */}
-      <section className="first-section">
-        <div className="first-section-content">
+      <div className="top">
+        <div className="top_left">
+          <h1>Android and ios App Development</h1>
+          <p className="top_c">
+            Get more users to promote your app with this template
+          </p>
+          <button className="startBtn">Get Start Now</button>
+        </div>
+        <div className="top_right">
+          <img src={phone} alt="phone image" />
+        </div>
+      </div>
+
+      <div className="middleSection container">
+        <h1>Save your time by using our app</h1>
+        <div className="app_icon_container ">
           <div className="row">
-            <div className="col-md-6">
-              <div className="mobile-screen">
-                <img src={phone} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6">
+            <div className="col-lg-4 col-md-4">
               <div className="content">
-                <h1>LOREM IPSUM</h1>
-                <h4>lorem ipsum</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit. Donec odio. Quisque volutpat
-                  mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna
-                  nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
+                <div className="icon icon1">
+                  <i className="fas fa-users"></i>
+                </div>
+                <h3>Manage team in One Place</h3>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4">
+              <div className="content">
+                <div className="icon icon2">
+                  <i className="fas fa-leaf"></i>
+                </div>
+                <h3>All-powerful Features</h3>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-4">
+              <div className="content">
+                <div className="icon icon3">
+                  <i className="far fa-comment-alt"></i>
+                </div>
+                <h3>Establish a solid online presence</h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="platform-main">
-        <div className="platform-content">
-          <div className="row">
-            <div className="col-md-6 mt-5">
-              <div className="platform-data">
-                <h1>LOREM IPSUM</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede.Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit. Donec odio. Quisque volutpat
-                  mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna
-                  nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 mt-5">
-              <div className="platform-icon-box">
-                <div className="icon-box">
-                  <i className="fa fa-apple fa-5x"></i>
-                  <span>Ios</span>
-                </div>
-                <div className="icon-box android">
-                  <i className="fa fa-android fa-5x"></i>
-                  <span>Android</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="slider">
-        <div className="slider-con">
-          <div className="row">
-            <div className="col-md-6"></div>
-            <div className="col-md-6">
-              <div className="slider-content">
-                <h1>LOREM IPSUM</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                  suscipit, posuere a, pede. Lorem ipsum dolor sit amet,
-                  consectetuer adipiscing elit. Donec odio. Quisque volutpat
-                  mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna
-                  nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="structure">
-        <div className="row">
-          <div className="structurebox">
-            <span className="big-text">Structure</span>
-            <h1>Structure</h1>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-            <img src={group} alt="" className="img-fluid" />
-          </div>
-        </div>
-      </section>
+      <hr />
 
-      <section className="applications-features">
-        <div className="feature-box-left">
-          <span>FEATURES</span>
-          <img src={group1} alt="" />
+      <div className="bottomSection container">
+        <div className="b_left">
+          <h1>Features that give you real feel</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida Risus com odo viverra maecenas.
+          </p>
+          <button className="btn btn-primary">View More</button>
         </div>
-        <div className="feature-content">
-          <div className="feature-content-box">
-            <span>01</span>
-            <h3>Scan</h3>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-          </div>
-          <div className="feature-content-box">
-            <span>01</span>
-            <h3>Scan</h3>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-          </div>
-          <div className="feature-content-box">
-            <span>01</span>
-            <h3>Scan</h3>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede..
-            </p>
-          </div>
-          <div className="feature-content-box">
-            <span>01</span>
-            <h3>Scan</h3>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-          </div>
-          <div className="feature-content-box">
-            <span>01</span>
-            <h3>Scan</h3>
-            <p style={{ fontWeight: "500" }}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
-              turpis. Suspendisse urna nibh, viverra non, semper suscipit,
-              posuere a, pede.
-            </p>
-          </div>
+        <div className="b_right">
+          <img src={appdisplay} alt="Phone with app" />
         </div>
-      </section>
-      <section className="why-use-main">
-        <div className="row">
-          <div className="col-md-8">
-            <div className="section-why-use">
-              <h1>
-                <span>CUT</span>
-                Why?
-              </h1>
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="why-thumb">
-                    <h3>Time-Saving</h3>
-                    <p style={{ fontWeight: "400" }}>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                      erat ut turpis. Suspendisse urna nibh, viverra non, semper
-                      suscipit, posuere a, pede.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      </div>
+
+      <div className="bottomSection container">
+        <div className="b_left1">
+          <h1>Apps Features & Support Which Give You More Freedom</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus
+            eleifend tortor, vel molestie orci feugiat sit amet. We are
+            committed to providing quality IT Services. Vesti at bulum nec odio
+            aea the dumm ipsumm ipsum. Our benefits are endless for local IT
+            Companies & Startups. We are committed to providing quality IT
+            Services.
+          </p>
+          <button className="btn btn-primary">View More</button>
+        </div>
+        <div className="b_right2">
+          <img src={phone2} alt="Phone with app" />
+        </div>
+      </div>
+
+      <div className="footerBanner">
+        <div className="container fb_container">
+          <div className="fb_left">
+            <h1>Download Our App</h1>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ex aut exercitationem quae possimus magnam.
+            </h4>
+            <div className="btn_container">
+              <button className="store">
+                <i className="fab fa-app-store-ios"></i>Appstore
+              </button>
+              <button className="store">
+                <i class="fab fa-google-play"></i>Playstore
+              </button>
             </div>
           </div>
-          <div className="col-md-4 layer-screen">
-            <img
-              src={group3}
-              alt=""
-              style={{ width: "119%", height: "fit-content" }}
-            />
+          <div className="fb_right">
+            <img src={icecream} alt="Phone Image" />
           </div>
         </div>
-      </section>
+      </div>
+
       <Footer />
     </div>
   );

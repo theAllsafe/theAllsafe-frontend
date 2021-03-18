@@ -17,7 +17,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={Business} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Business Solution</p>
           </div>
           <ul className="submenu">
@@ -43,7 +43,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon2} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Education</p>
           </div>
           <ul className="submenu">
@@ -62,7 +62,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon3} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Health Care</p>
           </div>
           <ul className="submenu">
@@ -81,7 +81,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon4} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Health Care</p>
           </div>
           <ul className="submenu">
@@ -100,7 +100,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon5} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Human Resource</p>
           </div>
           <ul className="submenu">
@@ -119,7 +119,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon6} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>News &amp; Blogs</p>
           </div>
           <ul className="submenu">
@@ -137,8 +137,10 @@ const BlockMenu = () => {
       </ul>
       <ul class="menu">
         <li className="box">
-          <img src={icon7} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div>
+            <img src={icon7} className="img-fluid" />
+          </div>
+          <div className="o">
             <p>Online Reservation</p>
           </div>
           <ul className="submenu">
@@ -154,7 +156,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon8} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Hotel &amp; Restaurant</p>
           </div>
           <ul className="submenu">
@@ -170,7 +172,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon9} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>OTT Platform</p>
           </div>
           <ul className="submenu">
@@ -186,7 +188,7 @@ const BlockMenu = () => {
       <ul class="menu">
         <li className="box">
           <img src={icon10} className="img-fluid" />
-          <div style={{ padding: '0 5px 0 5px' }}>
+          <div className="o">
             <p>Others</p>
           </div>
           <ul className="submenu">
