@@ -1,59 +1,52 @@
-import React from "react";
-import "./Business.css";
-import SafetyBanner from "../SafetyBanner/SafetyBanner";
-import Footer from "../Footer/Footer";
-import banner from "./res/1.png";
+import React from 'react';
+import './Business.css';
+import SafetyBanner from '../SafetyBanner/SafetyBanner';
+import Footer from '../Footer/Footer';
+import banner from './res/1.png';
 // import banner2 from "./res/banner2.png";
 //import banner3 from "./res/banner3.png";
-import Fade from "react-reveal/Fade";
-import FullScreenSlider from "../FullScreenSliderx3/FullScreenSlider";
-import NavBar from "../NavBar/NavBar";
+import Fade from 'react-reveal/Fade';
+import FullScreenSlider from '../FullScreenSliderx3/FullScreenSlider';
+import NavBar from '../NavBar/NavBar';
 
 function Business() {
   return (
     <>
       <NavBar />
       <section className="business">
-        <div className="row">
-          <div className="col-md-6 mt-4">
-            <h1 className="business-header">
-              Quality Software can make <br />{" "}
-              <span className="bold-text">
-                <b>your business</b>
-              </span>{" "}
-              easy to manage
-              <br /> and{" "}
-              <span className="bold-text">
-                <b>maximize your profit.</b>
-              </span>
-            </h1>
+        <div className="b_top_left">
+          <h1 className="business-header">
+            Quality Software can make <br />{' '}
+            <span className="bold-text">
+              <b>your business</b>
+            </span>{' '}
+            easy to manage
+            <br /> and{' '}
+            <span className="bold-text">
+              <b>maximize your profit.</b>
+            </span>
+          </h1>
+          <br />
+          <p className="business-para">
+            Solve your puzzle with unique ideas in business automation.
+            <br /> Use theAllSafe's top-rated software to make money your
             <br />
-            <p className="business-para">
-              Solve your puzzle with unique ideas in business automation.
-              <br /> Use theAllSafe's top-rated software to make money your
-              <br />
-              business sustainable and more profitable.
-              <br />
-              Let's us help you to touch your dream.
-            </p>
-            <a href="#!" className="business-button mb-3">
-              Become a partner &nbsp;&nbsp;&nbsp;
-              <i className="fa fa-home"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#!" className="business-button mb-3">
-              Be Customer &nbsp;&nbsp;&nbsp;
-              <i className="fa fa-arrow-right"></i>
-            </a>
-          </div>
-          <div className="col-md-6">
-            <img
-              src={banner}
-              alt=""
-              className="img-fluid"
-              style={{ width: "100%" }}
-            />
-          </div>
+            business sustainable and more profitable.
+            <br />
+            Let's us help you to touch your dream.
+          </p>
+          <a href="#!" className="business-button mb-3">
+            Become a partner &nbsp;&nbsp;&nbsp;
+            <i className="fa fa-home"></i>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#!" className="business-button mb-3">
+            Be Customer &nbsp;&nbsp;&nbsp;
+            <i className="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div className="b_top_right">
+          <img src={banner} alt="" />
         </div>
       </section>
       <FullScreenSlider />
