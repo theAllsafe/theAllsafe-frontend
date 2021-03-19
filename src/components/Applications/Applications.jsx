@@ -67,7 +67,7 @@ function Applications() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida Risus com odo viverra maecenas.
           </p>
-          <button className="btn btn-primary">View More</button>
+          <button className="btn view">View More</button>
         </div>
         <div className="b_right">
           <img src={appdisplay} alt="Phone with app" />
@@ -85,7 +85,7 @@ function Applications() {
             for local IT Companies & Startups. <br />
             We are committed to providing quality IT Services.
           </p>
-          <button className="btn btn-primary">View More</button>
+          <button className="btn view">View More</button>
         </div>
         <div className="b_right2">
           <img src={phone2} alt="Phone with app" />

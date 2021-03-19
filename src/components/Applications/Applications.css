@@ -23,14 +23,24 @@
   font-size: 30px;
   color: #fff;
 }
+.view {
+  background-color: #316698;
+  color: #fff;
+  border-radius: 30px;
+}
+.view:hover {
+  background-color: #0a59a3;
+  color: #fff;
+}
 .startBtn {
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background-color: #50f2f5;
-  color: rgb(66, 66, 66);
-  border-radius: 5px;
+  background-color: #64b0f8;
+  border-radius: 30px;
+  color: #fff;
+
   margin-top: 30px;
 }
 .middleSection {
@@ -102,7 +112,7 @@
 }
 
 .footerBanner {
-  background-color: #2695f9;
+  background-color: #316698;
   height: 600px;
   overflow: hidden;
 }
@@ -124,11 +134,11 @@
   padding: 10px 30px;
   border: none;
   margin-right: 20px;
-  background-color: #0173f5;
+  background-color: #1379d8;
   transition: all ease-in 0.3s;
   color: #fff;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 30px;
   margin-top: 40px;
 }
 .fb_container .store i {
@@ -138,11 +148,11 @@
   color: #fff;
 }
 .fb_container .store:hover {
-  background-color: #0156f5;
+  background-color: #0a59a3;
   transition: all ease-in 0.3s;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .top {
     height: 100%;
     background-image: url('./banner.png');
@@ -243,7 +253,6 @@
   /* footer section */
 
   .footerBanner {
-    background-color: #2695f9;
     height: 600px;
     overflow: hidden;
     padding-top: 30px;
@@ -276,20 +285,20 @@
     border: none;
     margin-right: 5px;
     margin-left: 5px;
-    background-color: #0173f5;
+
     transition: all ease-in 0.3s;
     color: #fff;
     font-size: 16px;
-    border-radius: 5px;
+
     margin-top: 10px;
   }
   .fb_container .store i {
-    font-size: 30px;
+    font-size: 25px;
     padding-right: 10px;
     color: #fff;
   }
   .fb_container .store:hover {
-    background-color: #0156f5;
+    background-color: #0a59a3;
     transition: all ease-in 0.3s;
   }
 }
