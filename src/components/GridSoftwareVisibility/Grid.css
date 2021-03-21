@@ -72,16 +72,60 @@
 .rightGrid {
   width: 330px;
   height: 200px;
-  background-color: red;
+  border: 1px solid #ddd;
   grid-row: 1;
   grid-column: 4/5;
   margin-top: 20px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.fire {
+  background: url('./hot-offers.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+.rightGrid h5 {
+  color: #fe873c;
+}
+.rightGrid a {
+  color: rgb(66, 66, 66) !important;
+}
+.rightGrid:hover .fire {
+  background: url('./hot-offers-white.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+.rightGrid:hover {
+  background-color: #fe873c;
+  transition: all 0.3s;
+  color: #fff;
+}
+.rightGrid:hover h5 {
+  color: #fff;
+}
+.rightGrid:hover a {
+  color: #fff !important;
+  text-decoration: underline !important;
 }
 .rightGrid2 {
   width: 330px;
   height: 440px;
-  background-color: red;
+  background: url('./trust.jpg');
+  background-position: center;
+  background-size: contain;
   grid-row: 2/4;
   grid-column: 4;
   margin-top: 20px;
