@@ -1,62 +1,220 @@
-.hot-deals {
-    padding: 30px 30px 50px 30px;
+.hotDeals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.wrapper img {
+  object-fit: cover;
+  width: 100%;
+  position: relative;
 }
 
-.hot-deals a {
-    text-decoration: none;
+.wrapper .overlay {
+  position: absolute;
+  top: 0;
+  height: 1%;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+  transition: 0.5s;
 }
-
-.hot-deals {
-    margin-top: 5em;
+.wrapper .demo {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  background-color: #247ed3;
 }
-
-.hot-deals .card {
-    margin: 20px 0;
-    border: 0px
+.wrapper:hover .overlay {
+  height: 230px;
+  transition: 0.5s;
+  opacity: 0.7;
 }
-
-.hot-deals .card-footer p {
-    margin-top: 25px;
+.wrapper:hover .demo {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
 }
-
-.hot-deals .card-footer .sidebtn {
-    margin-top: 18px;
-}
-
-.hot-deals .card-footer {
-    background-color: white;
-}
-
-.sidebtn i {
-    color: white;
-}
-
-.mybutton:hover i {
-    color: #346AA0
-}
-
-.basic:hover {
-    background-color: white;
-    color: #346AA0
-}
-
-.mybtn {
-    border: 1px solid lightgrey;
-    padding: 10px 25px;
-    color: black;
-}
-
-.mybtn:hover {
-    background-color: #346AA0;
-    color: white;
-}
-
-.basic {
-    background-color: #346aa0;
-    color: white;
-}
-
 .card {
-    border-radius: 4px;
-    box-shadow: 0 2px 8px 0 rgba(112, 105, 105, 0.2);
+  border: 1px solid #ddd !important;
+}
+
+.card .content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.card .content p {
+  font-size: 18px;
+  margin: 0;
+}
+.card .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card .boxes p {
+  font-weight: 500;
+}
+.basic {
+  background-color: #ddd;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 3px solid #316698;
+}
+.basic:hover {
+  background-color: #316698;
+  color: #fff;
+}
+.basic:focus {
+  background-color: #316698;
+}
+.strike {
+  text-decoration: line-through;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(134, 134, 134);
+}
+.off {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-tas {
+  background-color: #316698;
+  width: 100px !important;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.btn-tas:hover {
+  background-color: #1e4468;
+  color: #fff;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .hotDeals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .wrapper img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper .overlay {
+    position: absolute;
+    top: 0;
+    height: 1%;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .wrapper .demo {
+    visibility: hidden;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background-color: #247ed3;
+  }
+  .wrapper:hover .overlay {
+    height: 200px;
+    transition: 0.5s;
+    opacity: 0.7;
+  }
+  .wrapper:hover .demo {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+  }
+  .card {
+    border: 1px solid #ddd !important;
+    width: 350px;
+    box-shadow: 0 3px 10px #ddd;
+  }
+
+  .card .content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .card .content p {
+    font-size: 18px;
+    margin: 0;
+  }
+  .card .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .card .boxes p {
+    font-weight: 500;
+  }
+  .basic {
+    background-color: #ddd;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 3px solid #316698;
+  }
+  .basic:hover {
+    background-color: #316698;
+    color: #fff;
+  }
+  .basic:focus {
+    background-color: #316698;
+  }
+  .strike {
+    text-decoration: line-through;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(134, 134, 134);
+  }
+  .off {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .btn-tas {
+    background-color: #316698;
+    width: 100px !important;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+  }
+  .btn-tas:hover {
+    background-color: #1e4468;
+    color: #fff;
+  }
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
