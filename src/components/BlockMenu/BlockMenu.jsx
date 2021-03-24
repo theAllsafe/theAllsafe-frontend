@@ -22,6 +22,23 @@ const BlockMenu = () => {
           </div>
           <ul className="submenu">
             <li>
+              <a href="#">Inventory Management</a>
+            </li>
+            <li>
+              <a href="#">POS System</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="menu">
+        <li className="box">
+          <img src={icon2} className="img-fluid" />
+          <div className="o">
+            <p>E-Commerce</p>
+          </div>
+          <ul className="submenu">
+            <li>
               <a href="#">Single Vendor</a>
             </li>
             <li>
@@ -39,10 +56,9 @@ const BlockMenu = () => {
           </ul>
         </li>
       </ul>
-
       <ul class="menu">
         <li className="box">
-          <img src={icon2} className="img-fluid" />
+          <img src={icon3} className="img-fluid" />
           <div className="o">
             <p>Education</p>
           </div>
@@ -54,23 +70,7 @@ const BlockMenu = () => {
               <a href="#">Library Management System</a>
             </li>
             <li>
-              <a href="#"> E-Class Sharing Portal</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="menu">
-        <li className="box">
-          <img src={icon3} className="img-fluid" />
-          <div className="o">
-            <p>Health Care</p>
-          </div>
-          <ul className="submenu">
-            <li>
-              <a href="#">Hospital Management System</a>
-            </li>
-            <li>
-              <a href="#">Library Management System</a>
+              <a href="#">Learning Management System</a>
             </li>
             <li>
               <a href="#"> E-Class Sharing Portal</a>

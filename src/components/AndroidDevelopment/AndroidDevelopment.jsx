@@ -58,7 +58,7 @@ function AndroidDevelopement() {
                   necessitatibus nesciunt cumque voluptate accusamus quaerat
                   iusto!
                 </p>
-                <button className="btn btn-tas">Read More</button>
+                <button className="btn btn-more">Read More</button>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ function AndroidDevelopement() {
                   necessitatibus nesciunt cumque voluptate accusamus quaerat
                   iusto!
                 </p>
-                <button className="btn btn-tas">Read More</button>
+                <button className="btn btn-more">Read More</button>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ function AndroidDevelopement() {
                   necessitatibus nesciunt cumque voluptate accusamus quaerat
                   iusto!
                 </p>
-                <button className="btn btn-tas">Read More</button>
+                <button className="btn btn-more">Read More</button>
               </div>
             </div>
           </div>

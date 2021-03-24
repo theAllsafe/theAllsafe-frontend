@@ -1,18 +1,18 @@
-import React from "react";
-import "./OurOffering.css";
-import android from "./res/android.png";
-import ai from "./res/ai-service.png";
-import ios from "./res/ios.png";
-import maintain from "./res/maintain.png";
-import uiux from "./res/uiux.png";
-import webdev from "./res/web-development.png";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import './OurOffering.css';
+import android from './res/android.png';
+import ai from './res/ai-service.png';
+import ios from './res/ios.png';
+import maintain from './res/maintain.png';
+import uiux from './res/uiux.png';
+import webdev from './res/web-development.png';
+import Fade from 'react-reveal/Fade';
 //import Tada from "react-reveal/Tada";
 
 function OurOfferings() {
   return (
     <section class="service-home">
-      <hr style={{ marginTop: "-3rem", marginBottom: "3rem" }} />
+      <hr style={{ marginTop: '-3rem', marginBottom: '3rem' }} />
       <div class="container">
         <div class="container heading">
           <Fade top>
@@ -21,15 +21,15 @@ function OurOfferings() {
             </h2>
           </Fade>
         </div>
-        <div class="row" style={{ marginTop: "2em" }}>
+        <div class="row" style={{ marginTop: '2em' }}>
           <div className="col-md-6">
             <Fade left>
               <p
                 style={{
-                  fontSize: "15px",
-                  fontWeight: "200",
-                  lineHeight: "27px",
-                  color: "var(--gray-dark-color);",
+                  fontSize: '17px',
+                  fontWeight: '500',
+                  lineHeight: '27px',
+                  color: 'var(--gray-dark-color);',
                 }}
               >
                 We believe in providing smart and innovative mobile and web
@@ -41,10 +41,10 @@ function OurOfferings() {
 
               <p
                 style={{
-                  fontSize: "15px",
-                  fontWeight: "200",
-                  lineHeight: "27px",
-                  color: "var(--gray-dark-color);",
+                  fontSize: '17px',
+                  fontWeight: '500',
+                  lineHeight: '27px',
+                  color: 'var(--gray-dark-color);',
                 }}
               >
                 We believe in providing smart and innovative mobile and web
@@ -57,7 +57,7 @@ function OurOfferings() {
           </div>
 
           <div class="col-md-3">
-            <a href="/webdevelopment" style={{ textDecoration: "none" }}>
+            <a href="/webdevelopment" style={{ textDecoration: 'none' }}>
               <div class="service-home-box">
                 <h4>
                   Web <br />
@@ -75,7 +75,7 @@ function OurOfferings() {
           </div>
 
           <div class="col-md-3">
-            <a href="/android-development" style={{ textDecoration: "none" }}>
+            <a href="/android-development" style={{ textDecoration: 'none' }}>
               <div class="service-home-box">
                 <h4>
                   Android App <br />
@@ -93,7 +93,7 @@ function OurOfferings() {
           </div>
 
           <div class="col-md-3">
-            <a href="/ios-development" style={{ textDecoration: "none" }}>
+            <a href="/ios-development" style={{ textDecoration: 'none' }}>
               <div class="service-home-box">
                 <h4>
                   iOS App <br />
@@ -113,7 +113,7 @@ function OurOfferings() {
           <div class="col-md-3">
             <a
               href="/artificial-intelligence"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
             >
               <div class="service-home-box">
                 <h4>
@@ -134,7 +134,7 @@ function OurOfferings() {
           <div class="col-md-3">
             <a
               href="/maintainance-and-support"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
             >
               <div class="service-home-box">
                 <h4>
@@ -150,7 +150,7 @@ function OurOfferings() {
           </div>
 
           <div class="col-md-3">
-            <a href="/ui-design" style={{ textDecoration: "none" }}>
+            <a href="/ui-design" style={{ textDecoration: 'none' }}>
               <div class="service-home-box">
                 <h4>
                   UI/UX

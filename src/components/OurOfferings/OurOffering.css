@@ -1,6 +1,6 @@
 .service-home-box {
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   transition: 0.3s all ease;
   margin-bottom: 30px;
   background: var(--white-color);

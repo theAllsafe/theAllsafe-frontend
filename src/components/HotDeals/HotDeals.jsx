@@ -8,13 +8,27 @@ import NavBar from '../NavBar/NavBar';
 import Card from './Card';
 
 function HotDeals() {
+  const data = [
+    {
+      type: 'basic',
+      price: 1499,
+    },
+    {
+      type: 'value',
+      price: 1599,
+    },
+    {
+      type: 'prime',
+      price: 1699,
+    },
+  ];
   return (
     <>
       <NavBar />
 
       <div className="hotDeals">
-        {[1, 2, 3].map((el) => (
-          <Card />
+        {data.map((el) => (
+          <Card data={el} />
         ))}
       </div>
       <SafetyBanner />

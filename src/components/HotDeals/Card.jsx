@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import banner from './res/banner.jpg';
 
-const Card = () => {
+const Card = ({ data: { type, price } }) => {
+  const [pricing, setPricing] = useState(null);
+
   return (
     <div className="card">
       <div className="wrapper">
@@ -15,20 +17,38 @@ const Card = () => {
         <p>Product Description</p>
         <p>Want to put your own image in the circle?</p>
         <div className="boxes">
-          <div className="basic">
+          <div
+            tabIndex="1"
+            className="basic"
+            onClick={() => {
+              if (type === 'basic') setPricing(price);
+            }}
+          >
             <p>Basic</p>
           </div>
-          <div className="basic">
+          <div
+            tabIndex="2"
+            className="basic"
+            onClick={() => {
+              if (type === 'value') setPricing(price);
+            }}
+          >
             <p>Value</p>
           </div>
-          <div className="basic">
+          <div
+            tabIndex="3"
+            className="basic"
+            onClick={() => {
+              if (type === 'prime') setPricing(price);
+            }}
+          >
             <p>Prime</p>
           </div>
         </div>
         <hr />
         <div className="prices">
           <p>
-            <span className="strike">1499/month</span>{' '}
+            <span className="strike">{pricing}/month</span>{' '}
             <span className="off">34%</span>
           </p>
           <button className="btn btn-tas">

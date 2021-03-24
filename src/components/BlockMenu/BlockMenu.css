@@ -1,10 +1,10 @@
 .blockmenu {
-  margin-top: 100px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 .box {
   display: flex;
@@ -13,7 +13,7 @@
   align-items: center;
   border: 1px solid #ddd;
   padding-top: 15px;
-  width: 125px;
+  width: 140px;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 3px;
@@ -46,7 +46,19 @@
 .blockmenu .menu ul {
   background: #113c68;
   height: 0;
-  left: 45px;
+  left: 40px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+  top: 100%;
+  width: 250px;
+  z-index: -1;
+}
+
+.blockmenu .menu:last-child ul {
+  background: #113c68;
+  height: 0;
+  left: -100px;
   opacity: 0;
   position: absolute;
   transition: all 0.3s ease;
@@ -58,6 +70,11 @@
 .blockmenu li {
   text-align: left;
   list-style-type: none;
+}
+.blockmenu .menu:last-child ul li {
+  text-align: right;
+  list-style-type: none;
+  padding-right: 10px;
 }
 
 .blockmenu .menu li:hover ul {
@@ -86,4 +103,47 @@
 }
 .submenu li:hover {
   background: #216bb4;
+}
+.box:hover {
+  box-shadow: 0 0 10px #216bb4;
+}
+
+@media only screen and (max-width: 1600px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding-top: 15px;
+    width: 115px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding-top: 15px;
+    width: 105px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blockmenu {
+    display: none;
+  }
 }

@@ -127,7 +127,7 @@ const RequestQuote = () => {
           <i className="ri-upload-2-fill"></i> Browse
         </label>
 
-        <Button className="btn btn-tas" type="submit">
+        <Button className="btn btn-send" type="submit">
           Send Message
         </Button>
       </Form>

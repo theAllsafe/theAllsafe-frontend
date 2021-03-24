@@ -24,14 +24,14 @@
   line-height: 1.4em;
   font-size: 18px;
 }
-.btn-tas {
+.btn-send {
   background-color: #316698;
   width: 200px;
   color: #fff;
   font-size: 18px;
   border-radius: 30px;
 }
-.btn-tas:hover {
+.btn-send:hover {
   background-color: #1e4468;
   color: #fff;
 }

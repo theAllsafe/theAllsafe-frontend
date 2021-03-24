@@ -73,10 +73,10 @@
 }
 .basic:hover {
   background-color: #316698;
-  color: #fff;
 }
 .basic:focus {
   background-color: #316698;
+  color: #fff;
 }
 .strike {
   text-decoration: line-through;
@@ -185,11 +185,11 @@
   }
   .basic:hover {
     background-color: #316698;
-    color: #fff;
   }
-  .basic:focus {
+  .basic:focus:active {
     background-color: #316698;
   }
+
   .strike {
     text-decoration: line-through;
     font-size: 20px;
