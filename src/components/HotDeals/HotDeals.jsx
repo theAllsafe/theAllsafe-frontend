@@ -10,16 +10,22 @@ import Card from './Card';
 function HotDeals() {
   const data = [
     {
-      type: 'basic',
-      price: 1499,
+      productId: 1,
+      productName: 'Sample-1',
+      productDesc: 'Product Description...',
+      prices: [1499, 1599, 1999],
     },
     {
-      type: 'value',
-      price: 1599,
+      productId: 2,
+      productName: 'Sample-2',
+      productDesc: 'Product Description...',
+      prices: [1799, 1999, 2199],
     },
     {
-      type: 'prime',
-      price: 1699,
+      productId: 3,
+      productName: 'Sample-3',
+      productDesc: 'Product Description...',
+      prices: [499, 799, 999],
     },
   ];
   return (
@@ -28,7 +34,7 @@ function HotDeals() {
 
       <div className="hotDeals">
         {data.map((el) => (
-          <Card data={el} />
+          <Card key={el.productId} data={el} />
         ))}
       </div>
       <SafetyBanner />

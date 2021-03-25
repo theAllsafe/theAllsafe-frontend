@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import { Tab, TabContainer, Nav, Row, Col } from 'react-bootstrap';
 import banner from './res/banner.jpg';
 
-const Card = ({ data: { type, price } }) => {
-  const [pricing, setPricing] = useState(null);
+const Card = ({ data: { productName, productDesc, prices, productId } }) => {
+  const [pricing, setPricing] = useState(prices[0]);
+
+  const clickHandler = (id, type) => {
+    if (id) {
+      setPricing(prices[id - 1]);
+    }
+  };
 
   return (
     <div className="card">
@@ -13,42 +20,34 @@ const Card = ({ data: { type, price } }) => {
       </div>
 
       <div className="content">
-        <h4>Product Name</h4>
-        <p>Product Description</p>
+        <h4>{productName}</h4>
+        <p>{productDesc}</p>
         <p>Want to put your own image in the circle?</p>
         <div className="boxes">
-          <div
-            tabIndex="1"
-            className="basic"
-            onClick={() => {
-              if (type === 'basic') setPricing(price);
-            }}
-          >
-            <p>Basic</p>
-          </div>
-          <div
-            tabIndex="2"
-            className="basic"
-            onClick={() => {
-              if (type === 'value') setPricing(price);
-            }}
-          >
-            <p>Value</p>
-          </div>
-          <div
-            tabIndex="3"
-            className="basic"
-            onClick={() => {
-              if (type === 'prime') setPricing(price);
-            }}
-          >
-            <p>Prime</p>
-          </div>
+          <Tab.Container defaultActiveKey={1}>
+            <Nav variant="pills">
+              {[
+                { id: 1, type: 'Basic' },
+                { id: 2, type: 'Value' },
+                { id: 3, type: 'Prime' },
+              ].map((el) => (
+                <Nav.Item>
+                  <Nav.Link
+                    eventKey={el.id}
+                    onClick={() => clickHandler(el.id)}
+                    className="basic"
+                  >
+                    {el.type}
+                  </Nav.Link>
+                </Nav.Item>
+              ))}
+            </Nav>
+          </Tab.Container>
         </div>
         <hr />
         <div className="prices">
           <p>
-            <span className="strike">{pricing}/month</span>{' '}
+            <span className="strike">₹{pricing}/month</span>{' '}
             <span className="off">34%</span>
           </p>
           <button className="btn btn-tas">

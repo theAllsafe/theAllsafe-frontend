@@ -6,6 +6,7 @@
   color: #316698;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 3px 5px rgba(221, 221, 221, 0.432);
+  height: 70px;
 }
 .navBox1 li {
   display: inline;
@@ -14,7 +15,7 @@
   font-size: 18px;
 }
 .navBox1 ul {
-  margin-top: 8px;
+  margin-top: 15px;
 }
 a {
   color: #316698;
@@ -30,7 +31,7 @@ a {
   font-size: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: -10px;
+  margin-top: 0px;
 }
 .topnavbar .others {
   display: flex;
@@ -45,6 +46,7 @@ a {
   border-bottom: 3px solid gold;
   margin-left: 40px;
   margin-right: -100px;
+  margin-top: 8px;
 }
 .searchBtn {
   height: 38px;
@@ -53,6 +55,7 @@ a {
   border-bottom-right-radius: 3px;
   background-color: #316698;
   color: #fff;
+  margin-top: 8px;
 }
 .searchBtn:hover {
   background-color: #23486b;
@@ -62,6 +65,7 @@ a {
   border-radius: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  margin-top: 8px;
 }
 .dropdownMenu {
   width: 700px;

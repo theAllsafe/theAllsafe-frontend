@@ -55,29 +55,29 @@
 .card .boxes {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 .card .boxes p {
   font-weight: 500;
 }
 .basic {
-  background-color: #ddd;
   width: 100px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-bottom: 3px solid #316698;
+  background-color: #316698;
+  color: #fff !important;
+  margin-right: 10px;
 }
 .basic:hover {
   background-color: #316698;
-}
-.basic:focus {
-  background-color: #316698;
   color: #fff;
+  transition: 0.3s all;
 }
+
 .strike {
   text-decoration: line-through;
   font-size: 20px;
@@ -174,19 +174,14 @@
     font-weight: 500;
   }
   .basic {
-    background-color: #ddd;
     width: 100px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-bottom: 3px solid #316698;
   }
   .basic:hover {
-    background-color: #316698;
-  }
-  .basic:focus:active {
     background-color: #316698;
   }
 

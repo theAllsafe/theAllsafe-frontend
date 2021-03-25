@@ -10,26 +10,29 @@ import icon7 from './icon/Online Reservation.png';
 import icon8 from './icon/Hotel and Resturant.png';
 import icon9 from './icon/OTT Platform.png';
 import icon10 from './icon/Others.png';
+import { Link } from 'react-router-dom';
 
 const BlockMenu = () => {
   return (
     <div className="blockmenu container-fluid">
-      <ul class="menu">
-        <li className="box">
-          <img src={Business} className="img-fluid" />
-          <div className="o">
-            <p>Business Solution</p>
-          </div>
-          <ul className="submenu">
-            <li>
-              <a href="#">Inventory Management</a>
-            </li>
-            <li>
-              <a href="#">POS System</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <Link to="/businessSolution">
+        <ul class="menu">
+          <li className="box">
+            <img src={Business} className="img-fluid" />
+            <div className="o">
+              <p>Business Solution</p>
+            </div>
+            <ul className="submenu">
+              <li>
+                <a href="#">Inventory Management</a>
+              </li>
+              <li>
+                <a href="#">POS System</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </Link>
 
       <ul class="menu">
         <li className="box">
