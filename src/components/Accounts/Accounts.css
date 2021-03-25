@@ -1,9 +1,9 @@
-.accounts-section {
-  margin-top: 90px;
+.acc {
+  margin-top: 20px;
 }
 
 .accounts-content {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .accounts-register-form {
@@ -12,8 +12,6 @@
 }
 
 .accounts-btn {
-  color: #2463a1;
-  border-color: #2463a1;
   padding-left: 140px;
   padding-right: 140px;
 }
@@ -59,13 +57,18 @@
   /* border-bottom: 10px solid #6c5ea6; */
   background-color: white;
   margin: 5px;
+  cursor: pointer;
+}
+.login h3 {
+  font-size: 28px;
 }
 
-.login-section {
+.loginSection {
+  margin-top: 0px;
   padding: 150px 25px;
   background-color: lightblue;
   /* background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%); */
-  background: url(./res/gradient-network-connection-background_23-2148865393.jpg);
+  background: url('./res/gradient-network-connection-background_23-2148865393.jpg');
   /* background: #172337; */
   width: 100%;
   height: 100vh;
@@ -83,7 +86,7 @@
   margin-top: 26px;
   width: auto;
   max-width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .login i {
@@ -97,7 +100,7 @@ body {
 }
 
 .register-form-div {
-  margin-top: 25px;
+  margin-top: 5px;
   width: 700px;
   margin: auto;
   position: relative;

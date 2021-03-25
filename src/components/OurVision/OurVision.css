@@ -45,3 +45,60 @@
 .vision {
   padding-left: 50px;
 }
+
+@media only screen and (max-width: 1300px) {
+  .myvision {
+    margin-top: -300px;
+    padding-bottom: 80px;
+  }
+  .myvision .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -30px;
+  }
+  .myvision .wrapper img {
+    width: 350px;
+    object-fit: cover;
+  }
+  .mv_right p {
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .myvision .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission .imgBox {
+    background-image: url('./mission.png');
+    height: 80px;
+    width: 110px;
+    background-position: center;
+    background-size: cover;
+  }
+  .mission h3 {
+    margin-left: -20px;
+    font-size: 24px;
+    padding-top: 5px;
+  }
+  .vision .imgBox {
+    background-image: url('./vision.png');
+    height: 80px;
+    width: 110px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .vision {
+    padding-left: 50px;
+  }
+  .vision h3 {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+}

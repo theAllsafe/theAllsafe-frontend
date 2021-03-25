@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./Accounts.css";
-import NavBar from "../NavBar/NavBar";
+import React, { useState } from 'react';
+import './Accounts.css';
+import NavBar from '../NavBar/NavBar';
 
 const Accounts = () => {
   const [isSchool, setisSchool] = useState(true);
@@ -12,25 +12,25 @@ const Accounts = () => {
   const [businessStyle, setbusinessStyle] = useState(null);
   const [adminStyle, setadminStyle] = useState(null);
   const changeclientStyle = () => {
-    setclientStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setclientStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
     setcorporateStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changecorporatetStyle = () => {
-    setcorporateStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setcorporateStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
     setclientStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changebusinessStyle = () => {
-    setbusinessStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setbusinessStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
     setclientStyle(null);
     setcorporateStyle(null);
     setadminStyle(null);
   };
   const changeadminStyle = () => {
-    setadminStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setadminStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
     setclientStyle(null);
     setcorporateStyle(null);
     setbusinessStyle(null);
@@ -62,10 +62,10 @@ const Accounts = () => {
   return (
     <>
       <NavBar />
-      <section className="accounts-section">
+      <section className="acc">
         <div className="row">
           <div className="col-md-4">
-            <div className="login-section">
+            <div className="loginSection">
               <div className="row">
                 <div className="col-md-6" onClick={schoolClick}>
                   <div
@@ -139,9 +139,9 @@ const Accounts = () => {
           </div>
           {isSchool && (
             <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "16px" }}>
+              <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
+                  <h2 style={{ textAlign: 'center' }}>
                     Client <span className="ship">Registration</span>
                   </h2>
                 </div>
@@ -229,7 +229,7 @@ const Accounts = () => {
                     </button>
                   </div>
                   <div className="login-link mt-3">
-                    Already have an account?{" "}
+                    Already have an account?{' '}
                     <a href="/logins">
                       <span>Click here to login</span>
                     </a>
@@ -240,9 +240,9 @@ const Accounts = () => {
           )}
           {isVendor && (
             <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "16px" }}>
+              <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
+                  <h2 style={{ textAlign: 'center' }}>
                     Corporate <span className="ship">Registration</span>
                   </h2>
                 </div>
@@ -330,7 +330,7 @@ const Accounts = () => {
                     </button>
                   </div>
                   <div className="login-link mt-3">
-                    Already have an account?{" "}
+                    Already have an account?{' '}
                     <a href="/logins">
                       <span>Click here to login</span>
                     </a>
@@ -342,9 +342,9 @@ const Accounts = () => {
 
           {isInstructor && (
             <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "14px" }}>
+              <div className="accounts-content" style={{ marginTop: '14px' }}>
                 <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
+                  <h2 style={{ textAlign: 'center' }}>
                     Business Partner <span className="ship">Registration</span>
                   </h2>
                 </div>
@@ -432,7 +432,7 @@ const Accounts = () => {
                     </button>
                   </div>
                   <div className="login-link mt-3">
-                    Already have an account?{" "}
+                    Already have an account?{' '}
                     <a href="/logins">
                       <span>Click here to login</span>
                     </a>
@@ -443,9 +443,9 @@ const Accounts = () => {
           )}
           {isAdmin && (
             <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "16px" }}>
+              <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
+                  <h2 style={{ textAlign: 'center' }}>
                     Admin <span className="ship">Registration</span>
                   </h2>
                 </div>
@@ -533,7 +533,7 @@ const Accounts = () => {
                     </button>
                   </div>
                   <div className="login-link mt-3">
-                    Already have an account?{" "}
+                    Already have an account?{' '}
                     <a href="/logins">
                       <span>Click here to login</span>
                     </a>

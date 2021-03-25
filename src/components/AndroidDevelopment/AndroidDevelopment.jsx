@@ -14,7 +14,7 @@ function AndroidDevelopement() {
 
       <div
         className="col-md-12 heading"
-        style={{ marginTop: '5em' }}
+        style={{ marginTop: '0em' }}
         align="center"
       >
         <h2>
