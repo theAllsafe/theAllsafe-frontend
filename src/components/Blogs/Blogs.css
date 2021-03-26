@@ -1,126 +1,95 @@
-.blog_sec {
-  padding: 50px 30px;
+.industry_icons {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.industry_icons .item {
+  margin: 0 0 10px;
+}
+.industry_icons .item h5 {
+  display: block;
+  font-size: 18px;
+  color: #000 !important;
+  font-family: 500;
+  margin: 15px 0 0;
+  text-align: center;
+}
+.industry_icons .item a {
+  display: flex;
+  width: 180px;
+  height: 170px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: column;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  border-bottom: 8px solid transparent;
+}
+.industry_icons i {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
 }
 
-.blog_sec .card {
-  background: rgba(235, 240, 254, 1);
-  border: 0;
-  border-radius: 0;
-  margin-top: 20px;
+.item a:hover {
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.03);
+  background: var(--white);
 }
 
-.blogs-heading {
-  letter-spacing: 1px;
-  /*text-shadow: 0 2px 8px rgba(38, 171, 226, .9);*/
-  color: black;
-  font-size: 12px;
-  margin-top: 1em;
+.item.item1:hover a {
+  border-bottom-color: var(--yellow);
+}
+.item.item1:hover a i {
+  color: var(--yellow);
 }
 
-.card-title {
-  font-weight: bolder;
+.item.item2:hover a {
+  border-bottom-color: #316698;
+}
+.item.item2:hover a i {
+  color: #316698;
 }
 
-.industry-home-box {
-  width: 85%;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 50px;
-  background: var(--white-color);
-  background-color: white;
+.item.item3:hover a {
+  border-bottom-color: var(--green);
+}
+.item.item3:hover a i {
+  color: var(--green);
 }
 
-/* .industry-home-box:hover .onhovdiv {
-  width: 85%;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: yellow;
-} */
-
-.industry-home-box:hover {
-  box-shadow: 0 0 12px lightgray;
-  border-bottom: 8px solid #f7cd3f;
-  box-sizing: border-box;
-  height: 70%;
+.item.item4:hover a {
+  border-bottom-color: var(--purple);
+}
+.item.item4:hover a i {
+  color: var(--purple);
 }
 
-.industry-home-box:hover i {
-  color: #f7cd3f;
+.item.item5:hover a {
+  border-bottom-color: var(--green);
+}
+.item.item5:hover a i {
+  color: var(--green);
 }
 
-#education-box:hover i {
-  color: #0883c3;
+.item.item6:hover a {
+  border-bottom-color: var(--yellow);
+}
+.item.item6:hover a i {
+  color: var(--yellow);
 }
 
-#education-box:hover {
-  border-bottom: 8px solid #0883c3;
+.item.item7:hover a {
+  border-bottom-color: #316698;
+}
+.item.item7:hover a i {
+  color: #316698;
 }
 
-#shopping-box:hover i {
-  color: #6c5ea6;
+.item.item8:hover a {
+  border-bottom-color: var(--purple);
 }
-
-#shopping-box:hover {
-  border-bottom: 8px solid #6c5ea6;
-}
-
-#logistic-box:hover i {
-  color: #269d38;
-}
-
-#logistic-box:hover {
-  border-bottom: 8px solid #269d38;
-}
-
-#travel-box:hover i {
-  color: #f5bd00;
-}
-
-#travel-box:hover {
-  border-bottom: 8px solid #f5bd00;
-}
-
-#media-box:hover i {
-  color: #269d38;
-}
-
-#media-box:hover {
-  border-bottom: 8px solid #269d38;
-}
-
-#estate-box:hover i {
-  color: #f5bd00;
-}
-
-#estate-box:hover {
-  border-bottom: 8px solid #f5bd00;
-}
-
-#colleges-box:hover i {
-  color: #6c5ea6;
-}
-
-#colleges-box:hover {
-  border-bottom: 7px solid #6c5ea6;
-}
-
-.industry-home-box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
-  margin-bottom: 20px;
-}
-
-.industry-home-box img {
-  width: 75%;
-}
-
-.industry-home-box:hover a {
-  border-radius: 0;
-  background: #272727;
-  transition: 0.3s all ease;
-}
-
-.white-i {
-  color: #272727;
+.item.item8:hover a i {
+  color: var(--purple);
 }

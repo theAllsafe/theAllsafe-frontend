@@ -23,170 +23,56 @@ function Blogs() {
             </h2>
           </Fade>
         </div>
-        <Pulse>
-          <div className="row" style={{ marginTop: '3em' }}>
-            <div className="col-md-3 healthcare" align={'center'}>
-              <div className="industry-home-box">
-                <div>
-                  <i
-                    className="fa fa-heart fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Health Care</h4>
-                <div className="color"></div>
-              </div>
-            </div>
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="education-box">
-                <div>
-                  <i
-                    className="fa fa-graduation-cap fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Education</h4>
-              </div>
-            </div>
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="shopping-box">
-                <div>
-                  <i
-                    className="fa fa-shopping-basket fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Retail</h4>
-              </div>
-            </div>
-
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="logistic-box">
-                <div>
-                  <i
-                    className="fa fa-truck fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Logistics</h4>
-              </div>
-            </div>
-
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="travel-box">
-                <div>
-                  <i
-                    className="fa fa-plane fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Travel</h4>
-              </div>
-            </div>
-
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="media-box">
-                <div>
-                  <i
-                    className="fa fa-film fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Media</h4>
-                <div className="onhovdiv"></div>
-              </div>
-            </div>
-
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="estate-box">
-                <div>
-                  <i
-                    className="fa fa-building fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Real State</h4>
-              </div>
-            </div>
-
-            <div className="col-md-3" align={'center'}>
-              <div className="industry-home-box" id="colleges-box">
-                <div>
-                  <i
-                    className="fa fa-university fa-5x white-i"
-                    style={{ fontSize: '3em' }}
-                  ></i>
-                </div>
-
-                <h4 className="blogs-heading">Colleges</h4>
-              </div>
-            </div>
+        <div className="industry_icons">
+          <div className="item1 item">
+            <a href="#">
+              <i className="fa fa-heart"></i>
+              <h5>Health Care</h5>
+            </a>
           </div>
-        </Pulse>
-        {/*<div class="row">*/}
-        {/*  <div class="col-md-12">*/}
-        {/*    <h2 class="text-center font-weight-bold blogs-heading">*/}
-        {/*      OUR BLOGS*/}
-        {/*    </h2>*/}
-        {/*  </div>*/}
-        {/*  <div class="col-md-4">*/}
-        {/*    <div class="card">*/}
-        {/*      <img alt="" class="card-img-top" src={b1} />*/}
-        {/*      <div class="card-body">*/}
-        {/*        <h5 class="card-title">*/}
-        {/*          <strong>Front to Back</strong>*/}
-        {/*        </h5>*/}
-        {/*        <p class="card-text">*/}
-        {/*          The term “front-end” refers to the user interface, while*/}
-        {/*          “back-end” means the server, application and database that*/}
-        {/*          work behind the*/}
-        {/*        </p>*/}
-        {/*        <a href="#!" class="btn p-0">*/}
-        {/*          Read more...*/}
-        {/*        </a>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*  <div class="col-md-4">*/}
-        {/*    <div class="card">*/}
-        {/*      <img alt="" class="card-img-top" src={b2} />*/}
-        {/*      <div class="card-body">*/}
-        {/*        <h5 class="card-title">Android Devlopment</h5>*/}
-        {/*        <p class="card-text">*/}
-        {/*          The term “front-end” refers to the user interface, while*/}
-        {/*          “back-end” means the server, application and database that*/}
-        {/*          work behind the*/}
-        {/*        </p>*/}
-        {/*        <a href="#!" class="btn p-0">*/}
-        {/*          Read more...*/}
-        {/*        </a>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*  <div class="col-md-4">*/}
-        {/*    <div class="card">*/}
-        {/*      <img alt="" class="card-img-top" src={b3} />*/}
-        {/*      <div class="card-body">*/}
-        {/*        <h5 class="card-title">iOS Development</h5>*/}
-        {/*        <p class="card-text">*/}
-        {/*          The term “front-end” refers to the user interface, while*/}
-        {/*          “back-end” means the server, application and database that*/}
-        {/*          work behind the*/}
-        {/*        </p>*/}
-        {/*        <a href="#!" class="btn p-0">*/}
-        {/*          Read more...*/}
-        {/*        </a>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+          <div className="item2 item">
+            <a href="#">
+              <i className="fa fa-graduation-cap"></i>
+              <h5>Education</h5>
+            </a>
+          </div>
+          <div className="item3 item">
+            <a href="#">
+              <i className="fa fa-shopping-basket"></i>
+              <h5>Retail</h5>
+            </a>
+          </div>
+          <div className="item4 item">
+            <a href="#">
+              <i className="fa fa-truck"></i>
+              <h5>Logistics</h5>
+            </a>
+          </div>
+          <div className="item5 item">
+            <a href="#">
+              <i className="fa fa-plane"></i>
+              <h5>Travel</h5>
+            </a>
+          </div>
+          <div className="item6 item">
+            <a href="#">
+              <i className="fa fa-film"></i>
+              <h5>Media</h5>
+            </a>
+          </div>
+          <div className="item7 item">
+            <a href="#">
+              <i className="fa fa-building"></i>
+              <h5>Real Estate</h5>
+            </a>
+          </div>
+          <div className="item8 item">
+            <a href="#">
+              <i className="fa fa-university"></i>
+              <h5>Colleges</h5>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
