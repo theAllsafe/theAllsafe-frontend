@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .newBusiness {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .business-content {
   padding: 15px;
 }
-
+.banner-img {
+  width: 700px;
+  object-fit: cover;
+}
 .para {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 10px;
   margin-bottom: 2em;
   line-height: 25px;
@@ -41,9 +44,48 @@
 .business-solution a {
   text-decoration: none;
 }
-
+.bs_content {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+.other_text {
+  padding-top: 10px;
+  font-size: 18px;
+}
+.bs_prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bs_prices p {
+  margin: 0;
+}
+.btn-bs {
+  background-color: #316698;
+  color: #fff;
+  border-radius: 30px;
+  margin-left: 25px;
+}
 .business-solution {
-  margin-top: 7em;
+  margin-top: 0em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+.tabsssContainer {
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .business-heading {
@@ -57,21 +99,32 @@
   font-weight: bold;
   font-size: 25px;
 }
-
-.business-btn {
-  padding: 5px 10px;
-  border: 1px solid black;
-  border-radius: 0 !important;
-  color: black;
-  background-color: white;
+.overview {
+  background-color: rgb(240, 240, 240);
+  padding: 15px;
+  display: flex;
+}
+.overview_left {
+  width: 45%;
+}
+.overview_right {
+  width: 50%;
+  padding-left: 50px;
 }
 
-.active,
-.business-btn:hover {
-  background-color: #316698;
-  color: white;
+.features {
+  background-color: rgb(240, 240, 240) !important;
+  padding: 15px;
 }
+.features .feature_cards {
+  display: flex;
+  justify-content: center;
 
+  flex-wrap: wrap;
+}
+.features .feature_cards .card {
+  max-width: 380px !important;
+}
 .lastdiv {
   float: right;
 }
@@ -195,7 +248,7 @@
   text-shadow: 0 2px 8px rgba(38, 171, 226, 0.9);
   font-weight: 800;
   padding-bottom: 50px;
-  font-family: "Arial Black";
+  font-family: 'Arial Black';
 }
 
 .p_main_sec {
@@ -287,7 +340,9 @@
   font-size: 80px;
   font-weight: bold;
   position: absolute;
-  opacity: 0.5;
+  top: -25px;
+  left: 15px;
+  opacity: 0.3;
 }
 
 .featur1 {
@@ -299,18 +354,16 @@
   background-color: white;
   color: black;
 }
-
-th {
-  padding-left: 40px;
-  font-weight: lighter;
-  color: grey;
-  float: left;
+.release_history {
+  width: 70%;
 }
-
-td {
-  padding-left: 40px;
-  padding-top: 15px;
-  float: left;
+.release_history .table_head {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.release_history .table_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .th2 {
