@@ -24,14 +24,7 @@ function OurOfferings() {
         <div class="row" style={{ marginTop: '2em' }}>
           <div className="col-md-6">
             <Fade left>
-              <p
-                style={{
-                  fontSize: '17px',
-                  fontWeight: '500',
-                  lineHeight: '27px',
-                  color: 'var(--gray-dark-color);',
-                }}
-              >
+              <p className="para-15">
                 We believe in providing smart and innovative mobile and web
                 solutions that will help businesses to solve the problems of
                 their customers. We not only build the software, but we
@@ -39,14 +32,7 @@ function OurOfferings() {
                 can maximise the value it offers to their customers.
               </p>
 
-              <p
-                style={{
-                  fontSize: '17px',
-                  fontWeight: '500',
-                  lineHeight: '27px',
-                  color: 'var(--gray-dark-color);',
-                }}
-              >
+              <p className="para-15">
                 We believe in providing smart and innovative mobile and web
                 solutions that will help businesses to solve the problems of
                 their customers. We not only build the software, but we

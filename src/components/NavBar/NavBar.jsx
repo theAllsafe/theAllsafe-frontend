@@ -21,10 +21,10 @@ function NavBar() {
       </div>
       <div className="navBox1">
         <ul>
-          <li style={{ borderRight: '3px solid gold' }}>
+          <li className="navbarLink" style={{ borderRight: '3px solid gold' }}>
             <Link to="/business">Business</Link>
           </li>
-          <li style={{ borderRight: '3px solid gold' }}>
+          <li className="navbarLink" style={{ borderRight: '3px solid gold' }}>
             <Link to="/applications">Applications</Link>
           </li>
           <li

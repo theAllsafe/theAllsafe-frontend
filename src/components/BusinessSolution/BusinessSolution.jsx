@@ -43,8 +43,11 @@ function BusinessSolution() {
           </div>
 
           <div className="col-md-5 bs_content">
-            <h2 className="business-heading" style={{ fontFamily: 'Roboto' }}>
-              Product Name
+            <h2
+              className="business-heading"
+              style={{ fontFamily: 'Roboto', letterSpacing: 1 }}
+            >
+              PRODUCT NAME
             </h2>
             <p className="para">
               Product Description
@@ -77,7 +80,8 @@ function BusinessSolution() {
                 </Nav>
               </Tab.Container>
               <p className="other_text">
-                Basic Description Want to put your own image in the circle?
+                Basic Description
+                <br /> Want to put your own image in the circle?
               </p>
               <div className="bs_prices">
                 <p>

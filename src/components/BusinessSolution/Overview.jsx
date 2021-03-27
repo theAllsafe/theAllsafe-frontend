@@ -5,7 +5,7 @@ const Overview = () => {
     <div className="overview">
       <div className="overview_left">
         <h2 className="overview-heading">SAVE TIME &amp; ELIMINATE ERRORS</h2>
-        <p>
+        <p className="para-15">
           This simple yet effective tool supports over a dozen database
           platforms and helps automate the following processes:
         </p>
@@ -35,7 +35,7 @@ const Overview = () => {
       </div>
       <div className="overview_right">
         <h2 className="overview-heading">BENEFITS</h2>
-        <p>
+        <p className="para-15">
           DB Best Database Compare Suite has a user-friendly interface and
           doesn’t require any specific database experience from the users. In
           addition to that, our tool provides users with the following benefits:

@@ -26,7 +26,13 @@
   left: 50%;
   transform: translate(-50%);
   border-radius: 5px;
-  background-color: #247ed3;
+  background-color: #316698;
+  color: #fff;
+}
+.wrapper .demo:hover {
+  background: #fff;
+  border: 1px solid #316698;
+  color: #316698;
 }
 .wrapper:hover .overlay {
   height: 230px;
@@ -68,13 +74,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: #316698;
-  color: #fff !important;
+  background: transparent;
+  color: #316698 !important;
   margin-right: 10px;
+  border: 1px solid #316698;
 }
 .basic:hover {
   background-color: #316698;
-  color: #fff;
+  color: #fff !important;
   transition: 0.3s all;
 }
 
@@ -97,8 +104,9 @@
   border-radius: 30px;
 }
 .btn-tas:hover {
-  background-color: #1e4468;
-  color: #fff;
+  background: transparent !important;
+  color: #316698 !important;
+  border: 1px solid #316698;
 }
 .prices {
   display: flex;
@@ -136,8 +144,9 @@
     left: 50%;
     transform: translate(-50%);
     border-radius: 5px;
-    background-color: #247ed3;
+    background-color: #316698;
   }
+
   .wrapper:hover .overlay {
     height: 200px;
     transition: 0.5s;

@@ -1,16 +1,16 @@
-import React from "react";
-import planning from "./res/planning.png";
-import development from "./res/d&d.png";
-import deploy from "./res/deploy.png";
-import testing from "./res/testing.png";
-import support from "./res/support.png";
-import "./WorkProcess.css";
-import Fade from "react-reveal/Fade";
+import React from 'react';
+import planning from './res/planning.png';
+import development from './res/d&d.png';
+import deploy from './res/deploy.png';
+import testing from './res/testing.png';
+import support from './res/support.png';
+import './WorkProcess.css';
+import Fade from 'react-reveal/Fade';
 function WorkProcess() {
   return (
     <>
       <div className="offerings">
-        <hr style={{ marginTop: "-3rem", marginBottom: "3rem" }} />
+        <hr style={{ marginTop: '-3rem', marginBottom: '3rem' }} />
         <div class="heading">
           <Fade top>
             <h2>
@@ -25,7 +25,7 @@ function WorkProcess() {
                 <div className="work-pro-content">
                   <Fade left>
                     <h4 className="work-heading">Planning</h4>
-                    <p className="paragraph">
+                    <p className="para-14">
                       Before beginning the development process, we plan the
                       whole development strategy and each development stage that
                       will be involved in the project. These precautions allow
@@ -55,7 +55,7 @@ function WorkProcess() {
                 <div class="work-pro-content">
                   <Fade right>
                     <h4 className="work-heading">Design &amp; Development</h4>
-                    <p className="paragraph">
+                    <p className="para-14">
                       The design first consists of creating a digital prototype
                       (wireframe) to help you visually understand the web or
                       mobile application flow. The creative UI/UX designs are
@@ -84,11 +84,11 @@ function WorkProcess() {
                 <div class="work-pro-content">
                   <Fade left>
                     <h4 className="work-heading">Testing</h4>
-                    <p className="paragraph">
+                    <p className="para-14">
                       All software we create are vigorously tested by our
                       detailed Quality Analysts. We use both Manual and
                       Automated testing methods to guarantee our software is
-                      performing to a high standard.{" "}
+                      performing to a high standard.{' '}
                     </p>
                   </Fade>
                 </div>
@@ -111,7 +111,7 @@ function WorkProcess() {
                 <div class="work-pro-content">
                   <Fade right>
                     <h4 className="work-heading">Deploy</h4>
-                    <p className="paragraph">
+                    <p className="para-14">
                       Our experienced project managers and business analysts
                       plan and manage every stage of the project, to ensure the
                       agreed project scope, as well as the goals, mission, and
@@ -138,12 +138,12 @@ function WorkProcess() {
                 <div class="work-pro-content">
                   <Fade left>
                     <h4 className="work-heading">Maintenance &amp; Support</h4>
-                    <p className="paragraph">
+                    <p className="para-14">
                       Getting bespoke software development created by Nimble
                       AppGenie is only the start of your relationship with us.
                       We offer ongoing maintenance and technical/business
                       support to help your business maintain stability and plan
-                      for continued growth!{" "}
+                      for continued growth!{' '}
                     </p>
                   </Fade>
                 </div>
@@ -164,7 +164,7 @@ function WorkProcess() {
             </div>
           </div>
         </div>
-        <hr style={{ marginTop: "3rem", marginBottom: "-3rem" }} />
+        <hr style={{ marginTop: '3rem', marginBottom: '-3rem' }} />
       </div>
     </>
   );

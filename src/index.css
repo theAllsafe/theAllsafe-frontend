@@ -15,3 +15,35 @@ body {
 a {
   text-decoration: none !important;
 }
+
+.para-15 {
+  font-size: 15px;
+  color: var(--gray-dark-color);
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.para-14 {
+  font-size: 14px;
+  color: #666 !important;
+  letter-spacing: 0.25px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.navbarLink {
+  color: #666 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.small-heading {
+  font-size: 20px !important;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333 !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

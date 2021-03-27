@@ -1,17 +1,33 @@
 import React from 'react';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import logo from './box.svg';
 
-const Item = ({ image }) => {
+const Item = ({ image, items }) => {
+  const renderTooltip = (props) => {
+    console.log(props);
+    return (
+      <Tooltip id="button-tooltip" {...props}>
+        Sample Tooltip
+      </Tooltip>
+    );
+  };
   return (
     <>
       <div className="item">
         <img src={image} alt="product image" />
         <div className="product">
           <div className="iconContainer">
-            {[1, 2, 3, 4, 5].map((el) => (
-              <div className="icons">
-                <i className="fas fa-box"></i>
-              </div>
+            {items.map((el) => (
+              <OverlayTrigger
+                placement="right"
+                delay={{ show: 100, hide: 100 }}
+                overlay={renderTooltip}
+                title="hello"
+              >
+                <div className="icons">
+                  <i className="fas fa-box"></i>
+                </div>
+              </OverlayTrigger>
             ))}
           </div>
           <button className="viewall">View All</button>

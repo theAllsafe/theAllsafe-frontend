@@ -12,10 +12,10 @@
   display: inline;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 18px;
 }
 .navBox1 ul {
   margin-top: 15px;
+  font-weight: 600;
 }
 a {
   color: #316698;
@@ -41,7 +41,7 @@ a {
 }
 
 .topnavbar .contact {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   border-bottom: 3px solid gold;
   margin-left: 40px;
@@ -83,6 +83,9 @@ a {
 .topnavbar .toggleDropdown {
   position: relative;
   cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
 }
 .topnavbar .toggleDropdown:hover .dropdownMenu {
   visibility: visible;
@@ -100,9 +103,11 @@ a {
 }
 .dropdownMenu h5 {
   color: #000;
+  font-size: 16px;
   font-weight: 600;
-  padding-bottom: 3px;
+  padding-bottom: 0px;
   padding-top: 10px;
+  letter-spacing: 1px;
 }
 .category > p {
   display: block;
@@ -112,7 +117,8 @@ a {
   padding-top: 5px;
   padding-left: 26px;
   color: rgb(116, 116, 116);
-  font-size: 17px;
+  font-size: 16px;
+  text-transform: none;
 }
 .category > p:hover {
   text-decoration: underline;

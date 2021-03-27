@@ -1,25 +1,8 @@
 import React from 'react';
 import './OurVision.css';
-// import s1 from "./icon/s1.PNG";
-// import s2 from "./icon/s2.PNG";
-// import s3 from "./icon/s3.PNG";
-// import s4 from "./icon/s4.PNG";
-// import s5 from "./icon/s5.PNG";
-// import s6 from "./icon/s6.PNG";
-// import vision from "./icon/vision.png";
-// import about from "./icon/about.gif";
-// import mission from "./icon/mission.png";
-// import goal from "./icon/goal.png";
-// import success from "./icon/success.png";
-// import "./OurVision.css";
 import webdev from '../OurOfferings/res/web-development.png';
 import android from '../OurOfferings/res/android.png';
-// import ios from "../OurOfferings/res/ios.png";
-// import ai from "../OurOfferings/res/ai-service.png";
-// import maintain from "../OurOfferings/res/maintain.png";
-// import uiux from "../OurOfferings/res/uiux.png";
 import Fade from 'react-reveal/Fade';
-// import Tada from "react-reveal/Tada";
 
 export default function OurVision() {
   return (
@@ -68,14 +51,7 @@ export default function OurVision() {
 
             <div className="col-md-6">
               <Fade right>
-                <p
-                  style={{
-                    fontSize: '15px',
-                    fontWeight: '200',
-                    lineHeight: '27px',
-                    color: 'var(--gray-dark-color);',
-                  }}
-                >
+                <p className="para-15">
                   We believe in providing smart and innovative mobile and web
                   solutions that will help businesses to solve the problems of
                   their customers. We not only build the software, but we
@@ -83,14 +59,7 @@ export default function OurVision() {
                   business can maximise the value it offers to their customers.
                 </p>
 
-                <p
-                  style={{
-                    fontSize: '15px',
-                    fontWeight: '200',
-                    lineHeight: '27px',
-                    color: 'var(--gray-dark-color);',
-                  }}
-                >
+                <p className="para-15">
                   We believe in providing smart and innovative mobile and web
                   solutions that will help businesses to solve the problems of
                   their customers. We not only build the software, but we

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./AwesomeBuilds.css";
-import swap2 from "./res/swap2.webp";
-import swap3 from "./res/swap3.webp";
-import swap4 from "./res/pico_1.png";
-import Fade from "react-reveal/Fade";
-import Pulse from "react-reveal/Pulse";
+import React, { useState } from 'react';
+import './AwesomeBuilds.css';
+import swap2 from './res/swap2.webp';
+import swap3 from './res/swap3.webp';
+import swap4 from './res/pico_1.png';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 export default function AwesomeBuilds() {
   const [img, setimg] = useState(swap3);
   return (
@@ -26,7 +26,7 @@ export default function AwesomeBuilds() {
                       onClick={() => setimg(swap3)}
                       style={
                         img === swap3
-                          ? { borderBottom: "2px solid #f8c73d" }
+                          ? { borderBottom: '2px solid #f8c73d' }
                           : null
                       }
                     >
@@ -39,11 +39,11 @@ export default function AwesomeBuilds() {
                       onClick={() => setimg(swap2)}
                       style={
                         img === swap2
-                          ? { borderBottom: "2px solid #f8c73d" }
+                          ? { borderBottom: '2px solid #f8c73d' }
                           : null
                       }
                     >
-                      {" "}
+                      {' '}
                       SELF BUILD
                     </a>
                   </li>
@@ -53,7 +53,7 @@ export default function AwesomeBuilds() {
                       onClick={() => setimg(swap4)}
                       style={
                         img === swap4
-                          ? { borderBottom: "2px solid #f8c73d" }
+                          ? { borderBottom: '2px solid #f8c73d' }
                           : null
                       }
                     >
@@ -76,7 +76,7 @@ export default function AwesomeBuilds() {
                   <h3>
                     <b>Developed by theAllsafe</b>
                   </h3>
-                  <p>
+                  <p className="para-14">
                     Our softwares are user inspired, and custom builds. Our
                     softwares are user inspired, and custom builds. Our
                     softwares are user inspired, and custom builds. Our
@@ -98,7 +98,7 @@ export default function AwesomeBuilds() {
           </Pulse>
         </div>
       </div>
-      <hr style={{ marginTop: "2rem", marginBottom: "2rem" }} />
+      <hr style={{ marginTop: '2rem', marginBottom: '2rem' }} />
     </section>
   );
 }

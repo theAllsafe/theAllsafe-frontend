@@ -1,8 +1,8 @@
 .industry_icons {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 .industry_icons .item {
   margin: 0 0 10px;
@@ -92,4 +92,7 @@
 }
 .item.item8:hover a i {
   color: var(--purple);
+}
+.blog_sec h5 {
+  letter-spacing: 1px;
 }

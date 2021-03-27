@@ -3,7 +3,7 @@ import React from 'react';
 const Features = () => {
   return (
     <div className="features">
-      <p style={{ fontWeight: 500 }}>
+      <p className="para-15" style={{ lineHeight: 1.5 }}>
         We at theAllsafe Best understand the importance of data and the pain of
         data loss or corruption. So, we created a tool that you can trust when
         it comes to data operations, such as comparison, migration,
@@ -70,7 +70,7 @@ const Features = () => {
         </div>
         <div className="card col-md-4">
           <div className="card-body">
-            <span className="featur">4</span>
+            <span className="featur">5</span>
             <h5 className="card-title featur1">Command-line interface</h5>
             <p className="card-text">
               Database Compare Suite includes both GUI and CLI versions. You can

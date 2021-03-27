@@ -16,7 +16,7 @@ const Card = ({ data: { productName, productDesc, prices, productId } }) => {
       <div className="wrapper">
         <img src={banner} className="card-top-img" alt="Banner" />
         <div className="overlay"></div>
-        <button className="btn btn-tas demo">Demo</button>
+        <button className="btn demo">Demo</button>
       </div>
 
       <div className="content">

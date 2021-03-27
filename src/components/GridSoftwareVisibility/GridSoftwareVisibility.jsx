@@ -10,7 +10,7 @@ const GridSoftwareVisibility = () => {
       <div className="row">
         <div className="grid">
           {data.map((el) => (
-            <Item key={el.id} image={el.image} />
+            <Item key={el.id} image={el.image} items={el.items} />
           ))}
 
           <div className="rightGrid">
