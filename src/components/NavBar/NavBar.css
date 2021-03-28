@@ -2,11 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+
   color: #316698;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 3px 5px rgba(221, 221, 221, 0.432);
   height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: #fff;
 }
 .navBox1 li {
   display: inline;
@@ -15,11 +19,9 @@
 }
 .navBox1 ul {
   margin-top: 15px;
-  font-weight: 600;
+  font-weight: 400;
 }
-a {
-  color: #316698;
-}
+
 .topnavbar .logo img {
   width: 210px;
   object-fit: contain;
@@ -28,10 +30,15 @@ a {
   display: flex;
 }
 .topnavbar .others i {
-  font-size: 30px;
+  font-size: 25px;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0px;
+  color: #316698;
+}
+.topnavbar .others i:hover {
+  color: #23486b;
+  transition: 0.3s;
 }
 .topnavbar .others {
   display: flex;
@@ -41,12 +48,14 @@ a {
 }
 
 .topnavbar .contact {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   border-bottom: 3px solid gold;
   margin-left: 40px;
   margin-right: -100px;
-  margin-top: 8px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .searchBtn {
   height: 38px;
@@ -83,8 +92,9 @@ a {
 .topnavbar .toggleDropdown {
   position: relative;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: #000;
 }
 .topnavbar .toggleDropdown:hover .dropdownMenu {
@@ -104,7 +114,7 @@ a {
 .dropdownMenu h5 {
   color: #000;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 0px;
   padding-top: 10px;
   letter-spacing: 1px;
@@ -119,6 +129,7 @@ a {
   color: rgb(116, 116, 116);
   font-size: 16px;
   text-transform: none;
+  letter-spacing: 0.25px;
 }
 .category > p:hover {
   text-decoration: underline;
@@ -134,8 +145,8 @@ a {
   }
 
   .topnavbar .contact {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     border-bottom: 3px solid gold;
     margin-left: 25px;
     margin-right: -10px;
