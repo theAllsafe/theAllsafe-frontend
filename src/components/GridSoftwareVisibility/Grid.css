@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 70px;
+  margin: 0 auto;
 }
 
 .item img {
@@ -82,6 +83,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-right: 30px;
 }
 .fire {
   background: url('./hot-offers.svg');

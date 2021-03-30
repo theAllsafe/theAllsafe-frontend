@@ -37,18 +37,13 @@ function BusinessSolution() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row main_area">
           <div className="col-md-6">
             <img src={banner} className="banner-img" />
           </div>
 
           <div className="col-md-5 bs_content">
-            <h2
-              className="business-heading"
-              style={{ fontFamily: 'Roboto', letterSpacing: 1 }}
-            >
-              PRODUCT NAME
-            </h2>
+            <h2 className="business-heading">PRODUCT NAME</h2>
             <p className="para">
               Product Description
               <br />

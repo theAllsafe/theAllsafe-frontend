@@ -10,7 +10,7 @@
   object-fit: cover;
 }
 .para {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 10px;
   margin-bottom: 2em;
   line-height: 25px;
@@ -30,7 +30,7 @@
 }
 
 .business-solution {
-  padding: 10px 40px 50px 50px;
+  padding: 70px 40px 50px 50px;
 }
 
 /* .heading {
@@ -59,7 +59,7 @@
 }
 .other_text {
   align-self: flex-start;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.5px;
   padding-top: 10px;
@@ -101,7 +101,9 @@
   padding-bottom: 7px;
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 23px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
 }
 
 .overview-heading {
@@ -128,6 +130,7 @@
 }
 .features .feature_cards {
   display: flex;
+
   flex-wrap: wrap;
 }
 .features .feature_cards .card {
@@ -168,6 +171,7 @@
   background-color: #316698;
   border: 1px solid #316698;
   color: #fff !important;
+  font-size: 20px;
 }
 
 /* .business-btn:hover {
@@ -252,7 +256,7 @@
 
 .nav-link {
   color: grey;
-  font-weight: lighter;
+  font-weight: regular;
 }
 
 .nav-link .active {
@@ -389,4 +393,53 @@
 
 .overview-content {
   box-shadow: 0px 5px 5px 2px rgba(2, 2, 2, 0.2);
+}
+.view_entire {
+  align-self: center;
+  margin-top: 150px;
+  max-width: 380px;
+}
+
+.sv_container {
+  display: flex;
+}
+.sv_container .sv2 {
+  padding-top: 20px;
+}
+@media only screen and (max-width: 1500px) {
+  .banner-img {
+    width: 600px;
+    object-fit: cover;
+  }
+  .bs_content {
+    margin-left: 60px;
+    padding-top: 0px;
+  }
+  .features .feature_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .features .feature_cards .card {
+    max-width: 330px !important;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .banner-img {
+    width: 550px;
+    object-fit: cover;
+  }
+  .bs_content {
+    margin-left: 60px;
+    padding-top: 0px;
+  }
+  .main_area {
+    display: flex;
+  }
+  .features .feature_cards .card {
+    max-width: 290px !important;
+    margin-left: -4px;
+    margin-bottom: 30px;
+  }
 }

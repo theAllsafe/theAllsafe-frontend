@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Features = () => {
   return (
@@ -79,6 +79,50 @@ const Features = () => {
               verification of migration or upgrade.
             </p>
           </div>
+        </div>
+
+        <div className="view_entire col-md-4">
+          <h5 style={{ textDecoration: 'underline', cursor: 'pointer' }}>
+            View entire list...
+          </h5>
+        </div>
+      </div>
+
+      <div className="sv_container">
+        <div className="sv1">
+          <h5 className="card-title featur1" style={{ fontWeight: 600 }}>
+            SUPPORTED VERSIONS
+          </h5>
+          <ul className="para-15">
+            <li>Amazon Redshift</li>
+            <li>Apache Cassandra 2.1 or later</li>
+            <li>Azure SQL Database</li>
+            <li>Azure Synapse Analytics</li>
+            <li>BigQuery</li>
+            <li>IBM DB2 for Linux, Unix and Windows (LUW) 9.7 or later</li>
+            <li>MariaDB 5.5 or later</li>
+            <li>
+              Microsoft SQL Server 2000, 2005, 2008, 2012, 2014, 2016, 2017,
+              2019 (all editions)
+            </li>
+            <li>Microsoft Access</li>
+          </ul>
+        </div>
+        <div className="sv2">
+          <ul className="para-15 pt-4">
+            <li>
+              MySQL 5.5.3 or later (Database Compare Suite works with previous
+              versions as well, but some features can be omitted)
+            </li>
+            <li>Oracle 9.2 or later</li>
+            <li>
+              PostgreSQL 9.2 or later (Database Compare Suite works with
+              previous versions as well, but some features can be omitted)
+            </li>
+            <li>Sybase ASE 12.5 or later</li>
+            <li>Sybase IQ 16 or later</li>
+            <li>Teradata 14 or later</li>
+          </ul>
         </div>
       </div>
     </div>
