@@ -12,11 +12,7 @@ function WebDevelopment() {
     <>
       <NavBar />
 
-      <div
-        className="col-md-12 heading"
-        style={{ marginTop: '0em' }}
-        align="center"
-      >
+      <div className="col-md-12 heading" align="center">
         <h2>
           WEB <span className="ship">DEVELOPMENT</span>
         </h2>

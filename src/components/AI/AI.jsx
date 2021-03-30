@@ -12,11 +12,7 @@ function AI() {
     <>
       <NavBar />
 
-      <div
-        className="col-md-12 heading"
-        style={{ marginTop: '0em' }}
-        align="center"
-      >
+      <div className="col-md-12 heading" align="center">
         <h2>
           ARTIFICIAL <span className="ship">INTELIGENCE</span>
         </h2>

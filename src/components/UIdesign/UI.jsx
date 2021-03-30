@@ -12,11 +12,7 @@ function UI() {
     <>
       <NavBar />
 
-      <div
-        className="col-md-12 heading"
-        style={{ marginTop: '0em' }}
-        align="center"
-      >
+      <div className="col-md-12 heading" align="center">
         <h2>
           UI <span className="ship">DESIGN</span>
         </h2>
