@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 70px;
   margin: 0 auto;
+  margin-top: -15px !important;
 }
 
 .item img {

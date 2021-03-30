@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import "./Footer.css";
-import Cards from "./res/cards.PNG";
+import React, { useState } from 'react';
+import './Footer.css';
+import Cards from './res/cards.PNG';
 
-import icon from "./res/icon.svg";
+import icon from './res/icon.svg';
 
 function Footer() {
-  const [newclass, setClass] = useState("fa fa-chevron-right");
+  const [newclass, setClass] = useState('fa fa-chevron-right');
   const MouseOver = () => {
-    setClass("fa fa-chevron-up");
+    setClass('fa fa-chevron-up');
   };
   const MouseOut = () => {
-    setClass("fa fa-chevron-right");
+    setClass('fa fa-chevron-right');
   };
   return (
     <div>
@@ -19,7 +19,7 @@ function Footer() {
           <div class="row">
             <div class="f_box ">
               <h4 className="clr-white">
-                <i className="fa fa-money" style={{ color: "#FFBC01" }}></i>{" "}
+                <i className="fa fa-money" style={{ color: '#FFBC01' }}></i>{' '}
                 Best Selling
               </h4>
               <ul className="clr-white">
@@ -41,10 +41,10 @@ function Footer() {
 
             <div class="f_box">
               <h4>
-                <i
+                {/* <i
                   className="fa fa-user-circle"
                   style={{ color: "#FFBC01" }}
-                ></i>{" "}
+                ></i>{" "} */}
                 theAllSafe
               </h4>
               <ul>
@@ -73,7 +73,7 @@ function Footer() {
                       Terms & Condition &nbsp;
                       <i
                         class={newclass}
-                        style={{ color: "white", fontSize: "0.6rem" }}
+                        style={{ color: 'white', fontSize: '0.6rem' }}
                       ></i>
                     </a>
 
@@ -84,28 +84,28 @@ function Footer() {
                       <a
                         class="dropdown-item"
                         href="#!"
-                        style={{ color: "black", fontSize: "15px" }}
+                        style={{ color: 'black', fontSize: '15px' }}
                       >
                         Action
                       </a>
                       <a
                         class="dropdown-item"
                         href="#!"
-                        style={{ color: "black", fontSize: "15px" }}
+                        style={{ color: 'black', fontSize: '15px' }}
                       >
                         Another action
                       </a>
                       <a
                         class="dropdown-item"
                         href="#!"
-                        style={{ color: "black", fontSize: "15px" }}
+                        style={{ color: 'black', fontSize: '15px' }}
                       >
                         Something else here
                       </a>
                       <a
                         class="dropdown-item"
                         href="#!"
-                        style={{ color: "black", fontSize: "15px" }}
+                        style={{ color: 'black', fontSize: '15px' }}
                       >
                         Something else here
                       </a>
@@ -117,10 +117,10 @@ function Footer() {
             </div>
             <div class="f_box">
               <h4>
-                <i
+                {/* <i
                   className="fa fa-user-circle"
                   style={{ color: "#FFBC01" }}
-                ></i>{" "}
+                ></i>{" "} */}
                 Support
               </h4>
               <ul>
@@ -137,7 +137,7 @@ function Footer() {
             </div>
             <div class="f_box">
               <h4>
-                <i className="fa fa-globe" style={{ color: "#FFBC01" }}></i>
+                {/* <i className="fa fa-globe" style={{ color: '#FFBC01' }}></i> */}
                 Services
               </h4>
               <ul>
@@ -163,7 +163,7 @@ function Footer() {
 
             <div class="f_box">
               <h4>
-                <i className="fa fa-compress" style={{ color: "#FFBC01" }}></i>{" "}
+                {/* <i className="fa fa-compress" style={{ color: "#FFBC01" }}></i>{" "} */}
                 Connect
               </h4>
               <ul>
@@ -192,35 +192,35 @@ function Footer() {
 
           <section className="visa_card">
             <div className="row mt-2">
-              <div className="col-md-5 display-inline">
-                <a href="#!" style={{ textDecoration: "none" }}>
-                  <img src={icon} style={{ width: "5%" }} alt="" />
+              {/* <div className="col-md-5 display-inline">
+                <a href="#!" style={{ textDecoration: 'none' }}>
+                  <img src={icon} style={{ width: '5%' }} alt="" />
                   <label className="clr-white mr-3 ml-2"> E-Commerce</label>
                 </a>
 
-                <a href="#!" style={{ textDecoration: "none" }}>
-                  <img src={icon} style={{ width: "5%" }} alt="" />
+                <a href="#!" style={{ textDecoration: 'none' }}>
+                  <img src={icon} style={{ width: '5%' }} alt="" />
                   <label className="clr-white mr-3 ml-2"> E-Commerce</label>
                 </a>
 
-                <a href="#!" style={{ textDecoration: "none" }}>
-                  <img src={icon} style={{ width: "5%" }} alt="" />
+                <a href="#!" style={{ textDecoration: 'none' }}>
+                  <img src={icon} style={{ width: '5%' }} alt="" />
                   <label className="clr-white mr-3 ml-2"> E-Commerce</label>
                 </a>
-              </div>
+              </div> */}
 
               <div className="col-md-3">
                 <p>
-                  ©{" "}
-                  <b style={{ color: "#FFBC01", letterSpacing: "3px" }}>
-                    {" "}
+                  ©{' '}
+                  <b style={{ color: '#FFBC01', letterSpacing: '3px' }}>
+                    {' '}
                     theAllsafe
                   </b>
                 </p>
               </div>
 
               <div className="col-md-4">
-                <img src={Cards} style={{ width: "70%" }} alt="" />
+                <img src={Cards} style={{ width: '70%' }} alt="" />
                 {/*<a href="#!" style={{ textDecoration: "none" }}>*/}
                 {/*  <img src={f} style={{ width: "15%" }} alt="" />*/}
                 {/*</a>*/}

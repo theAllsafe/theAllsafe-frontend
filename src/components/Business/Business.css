@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 0 !important;
+  margin-top: 50px !important;
 }
 .b_top_right img {
   width: 500px;
@@ -323,6 +323,7 @@
   transition: 0.5s;
   background: #316898;
 }
+
 .single-feature-area:hover::before {
   height: 100%;
 }
@@ -339,18 +340,68 @@
   transition: 0.5s;
 }
 
+/* research cards */
+.single-research-area {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(23, 26, 41, 0.02);
+  box-shadow: 0 0.75rem 1.5rem rgba(23, 26, 41, 0.02);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.single-research-area .feature-icon {
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.stepCard1:hover i,
+.sstepCard1:hover a {
+  color: #ffc107;
+  transition: 0.5s;
+}
+.stepCard2:hover i,
+.sstepCard2:hover a {
+  color: #316698;
+  transition: 0.5s;
+}
+.stepCard3:hover i,
+.sstepCard3:hover a {
+  color: #28a745;
+  transition: 0.5s;
+}
+.stepBtn.color1 {
+  background-color: #ffc107;
+}
+.stepBtn.color2 {
+  background-color: #316698;
+}
+.stepBtn.color3 {
+  background-color: #28a745;
+}
+
 /* .stepCard:hover .stepBtn {
   visibility: hidden;
 } */
 
 .stepBtn {
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   border: none;
   width: 100%;
-  background-color: #316698;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   height: 30px;
   font-size: 20px;
   color: #fff;

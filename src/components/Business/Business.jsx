@@ -224,7 +224,7 @@ function Business() {
             </ul> */}
               <div class="rowy justify-content-center">
                 <div class="col-md-6 col-lg-4">
-                  <div class="single-feature-area text-center stepCard">
+                  <div class="single-research-area text-center stepCard1">
                     <div class="feature-icon">
                       <i class="ri-task-line"></i>
                     </div>
@@ -232,13 +232,13 @@ function Business() {
                     <div class="feature-content-text">
                       <h4>Research</h4>
                       <p>Start business with zero Programming knowledge</p>
-                      <button className="stepBtn">Step 1</button>
+                      <button className="stepBtn color1">Step 1</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                  <div class="single-feature-area text-center stepCard">
+                  <div class="single-research-area text-center stepCard2 ">
                     <div class="feature-icon">
                       <i class="ri-task-line"></i>
                     </div>
@@ -246,13 +246,13 @@ function Business() {
                     <div class="feature-content-text">
                       <h4>Research</h4>
                       <p>Earn money being a partner with theAllSafe</p>
-                      <button className="stepBtn">Step 2</button>
+                      <button className="stepBtn color2">Step 2</button>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                  <div class="single-feature-area text-center stepCard">
+                  <div class="single-research-area text-center stepCard3 ">
                     <div class="feature-icon">
                       <i class="ri-task-line"></i>
                     </div>
@@ -260,7 +260,7 @@ function Business() {
                     <div class="feature-content-text">
                       <h4>Research</h4>
                       <p>Establish your own brand with experts</p>
-                      <button className="stepBtn">Step 3</button>
+                      <button className="stepBtn color3">Step 3</button>
                     </div>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ function Business() {
           </div>
         </section>
       </div>
-      <SafetyBanner />
+      {/* <SafetyBanner /> */}
       <Footer />
     </>
   );

@@ -1,5 +1,5 @@
-import React from "react";
-import "./SafetyBanner.css";
+import React from 'react';
+import './SafetyBanner.css';
 function SafetyBanner() {
   return (
     <div className="bs-calltoaction bs-calltoaction-primary">
@@ -23,9 +23,9 @@ function SafetyBanner() {
           </div>
         </div>
 
-        <div className="col-md-3 cta-button" style={{ marginTop: "2em" }}>
+        <div className="col-md-3 cta-button" style={{ marginTop: '2em' }}>
           <h1>
-            {" "}
+            {' '}
             <i className="fa fa-truck fa-2x clr-white"></i>
           </h1>
         </div>
@@ -33,7 +33,7 @@ function SafetyBanner() {
         <div className="col-md-3 cta-button mt-4">
           <a href="#!" className="btn btn-lg btn-block btn-info">
             <i className="fa fa-clock-o clr-white"></i> Quick Setup / Delivery
-          </a>{" "}
+          </a>{' '}
           <br />
           <a href="#!" className="btn btn-lg btn-block btn-info">
             <i className="fa fa-handshake-o clr-white"></i> Full Functional
