@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   color: #316698;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 3px 5px rgba(221, 221, 221, 0.432);
@@ -145,10 +144,16 @@
   }
 
   .topnavbar .contact {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     border-bottom: 3px solid gold;
     margin-left: 25px;
     margin-right: -10px;
+  }
+  .topnavbar .toggleDropdown {
+    font-size: 13px;
+  }
+  .navBox1 ul {
+    margin-top: 12px;
   }
 }

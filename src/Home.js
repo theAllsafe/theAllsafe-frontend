@@ -1,17 +1,17 @@
-import "./App.css";
-import React from "react";
-import BlockMenu from "./components/BlockMenu/BlockMenu";
-import Footer from "./components/Footer/Footer";
-import HeadMenu from "./components/HeadMenu/HeadMenu";
-import GridSoftwareVisibility from "./components/GridSoftwareVisibility/GridSoftwareVisibility";
-import FullScreenSlider from "./components/FullScreenSliderx3/FullScreenSlider";
-import OurVision from "./components/OurVision/OurVision";
-import AwesomeBuilds from "./components/AwesomeBuilds/AwesomeBuilds";
-import Blogs from "./components/Blogs/Blogs";
-import SafetyBanner from "./components/SafetyBanner/SafetyBanner";
-import WorkProcess from "./components/WorkProcess/WorkProcess";
-import OurOfferings from "./components/OurOfferings/OurOfferings";
-import NavBar from "./components/NavBar/NavBar";
+import './App.css';
+import React from 'react';
+import BlockMenu from './components/BlockMenu/BlockMenu';
+import Footer from './components/Footer/Footer';
+import HeadMenu from './components/HeadMenu/HeadMenu';
+import GridSoftwareVisibility from './components/GridSoftwareVisibility/GridSoftwareVisibility';
+import FullScreenSlider from './components/FullScreenSliderx3/FullScreenSlider';
+import OurVision from './components/OurVision/OurVision';
+import AwesomeBuilds from './components/AwesomeBuilds/AwesomeBuilds';
+import Blogs from './components/Blogs/Blogs';
+import SafetyBanner from './components/SafetyBanner/SafetyBanner';
+import WorkProcess from './components/WorkProcess/WorkProcess';
+import OurOfferings from './components/OurOfferings/OurOfferings';
+import NavBar from './components/NavBar/NavBar';
 
 function Home() {
   return (
@@ -27,7 +27,7 @@ function Home() {
       <AwesomeBuilds />
       <Blogs />
       {/* <ContactUs /> */}
-      <SafetyBanner />
+      {/* <SafetyBanner /> */}
       {/* <OurCollab /> */}
       {/* <Banner /> */}
       <Footer />
