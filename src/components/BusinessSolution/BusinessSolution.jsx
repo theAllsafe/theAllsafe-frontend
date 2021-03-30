@@ -11,6 +11,7 @@ import { Tab, Nav, Tabs } from 'react-bootstrap';
 import Overview from './Overview';
 import Features from './Features';
 import ReleaseHistory from './ReleaseHistory';
+import RelatedDeals from './RelatedDeals';
 
 function BusinessSolution() {
   let prices = [1499, 1599, 1699];
@@ -30,7 +31,7 @@ function BusinessSolution() {
       <section className="business-solution">
         <div className="row">
           <div className="col-md-12" align="center">
-            <div className="heading">
+            <div className="heading pb-5">
               <h2>
                 Business <span className="ship">Solutions</span>
               </h2>
@@ -103,7 +104,9 @@ function BusinessSolution() {
               <ReleaseHistory />
             </Tab>
             <Tab eventKey="license" title="BUY LICENSE"></Tab>
-            <Tab eventKey="deals" title="RELATED DEALS"></Tab>
+            <Tab eventKey="deals" title="RELATED DEALS">
+              <RelatedDeals />
+            </Tab>
           </Tabs>
         </div>
       </div>

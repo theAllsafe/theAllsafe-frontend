@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Card = ({ data }) => {
+const Card = ({ data, width }) => {
   return (
-    <div className="card">
+    <div style={width && { width: width }} className="card">
       {data.sale && <span className="sale">SALE</span>}
       <img src={data.image} className="card-img-top" alt="..."></img>
       <div className="card-body">

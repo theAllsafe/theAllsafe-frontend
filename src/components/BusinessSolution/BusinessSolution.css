@@ -64,6 +64,13 @@
   letter-spacing: 0.5px;
   padding-top: 10px;
 }
+.x_container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .bs_prices {
   display: flex;
   align-items: center;
@@ -83,7 +90,7 @@
   border: 1px solid #316698;
 }
 .business-solution {
-  margin-top: 0em;
+  margin-top: -50px;
   margin-left: 50px;
   margin-right: 50px;
 }

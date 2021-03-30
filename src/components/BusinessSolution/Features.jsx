@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import FeatureCard from './FeatureCard';
+import data from './featuredata';
 
 const Features = () => {
+  let len = data.length;
+  const [oldData, setOldData] = useState(data.slice(0, len - 3));
   return (
     <div className="features">
       <p className="para-15" style={{ lineHeight: 1.5 }}>
@@ -17,74 +21,20 @@ const Features = () => {
         features below.
       </p>
       <div className="feature_cards">
-        <div className="card ">
-          <div className="card-body">
-            <span className="featur">1</span>
-            <h5 className="card-title featur1">
-              Database Schema Comparison Tool
-            </h5>
-            <p className="card-text">
-              Compare database schemas and identify differences in tables,
-              views, triggers, stored procedures, functions, packages, synonyms,
-              rules, etc. The schema comparison operation takes into account
-              specifics of all supported dialects.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-body">
-            <span className="featur">2</span>
-            <h5 className="card-title featur1">Data Comparison Tool</h5>
-            <p className="card-text">
-              Compare data in two database tables or views to quickly discover
-              whether they are equal or not. You can run this operation against
-              databases with equal or close-to-equal database schemas regardless
-              of the source and target platforms.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-body">
-            <span className="featur">3</span>
-            <h5 className="card-title featur1">Fast Data Comparison Tool</h5>
-            <p className="card-text">
-              For big volumes of data, the fast data comparison operation
-              quickly checks whether the tables are not equal or not. The result
-              is based on the value, returned by the hash function, so, the
-              detailed comparison results are not available.
-            </p>
-          </div>
-        </div>
-
-        <div className="card col-md-4">
-          <div className="card-body">
-            <span className="featur">4</span>
-            <h5 className="card-title featur1">Data Migration Tool</h5>
-            <p className="card-text">
-              Migrate data from the source table to the target table regardless
-              of the database platforms. Use caution when migrating data as this
-              operation clears the data in the target table and then uploads the
-              data from the source table.
-            </p>
-          </div>
-        </div>
-        <div className="card col-md-4">
-          <div className="card-body">
-            <span className="featur">5</span>
-            <h5 className="card-title featur1">Command-line interface</h5>
-            <p className="card-text">
-              Database Compare Suite includes both GUI and CLI versions. You can
-              utilize a command-line interface to automate the execution of
-              different data management tasks, DevOps operations, and
-              verification of migration or upgrade.
-            </p>
-          </div>
-        </div>
-
+        {oldData.map((el) => (
+          <FeatureCard data={el} />
+        ))}
         <div className="view_entire col-md-4">
-          <h5 style={{ textDecoration: 'underline', cursor: 'pointer' }}>
-            View entire list...
-          </h5>
+          {oldData.length !== len ? (
+            <h5
+              onClick={() => setOldData(data.slice(0, len))}
+              style={{ textDecoration: 'underline', cursor: 'pointer' }}
+            >
+              View entire list...
+            </h5>
+          ) : (
+            ''
+          )}
         </div>
       </div>
 

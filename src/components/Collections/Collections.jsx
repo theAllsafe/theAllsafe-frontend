@@ -1,6 +1,5 @@
 import React from 'react';
 import './Collections.css';
-
 import HeadMenu from '../HeadMenu/HeadMenu';
 import Footer from '../Footer/Footer';
 import SafetyBanner from '../SafetyBanner/SafetyBanner';
@@ -19,7 +18,7 @@ function Collections() {
           <Card key={item.id} data={item} />
         ))}
       </div>
-      <SafetyBanner />
+      {/* <SafetyBanner /> */}
       <Footer />
     </>
   );
