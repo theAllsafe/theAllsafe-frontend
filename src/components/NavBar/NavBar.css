@@ -142,16 +142,19 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  .navbarLink {
+    font-size: 14px !important;
+  }
 
   .topnavbar .contact {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     border-bottom: 3px solid gold;
     margin-left: 25px;
     margin-right: -10px;
   }
   .topnavbar .toggleDropdown {
-    font-size: 13px;
+    font-size: 14px;
   }
   .navBox1 ul {
     margin-top: 12px;
