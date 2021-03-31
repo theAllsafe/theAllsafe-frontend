@@ -1,0 +1,31 @@
+.head_menu {
+  margin-top: 80px;
+  padding: 15px;
+}
+
+.head_menu ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 30px 0;
+}
+
+.head_menu ul li a {
+  color: #2463a1;
+  text-decoration: none;
+}
+
+.head_menu ul li {
+  padding: 0 20px;
+  border-left: 2px solid rgb(255, 188, 0);
+}
+
+.head_menu ul li:last-child {
+  border-right: 2px solid rgb(255, 188, 0);
+}
+
+.head_menu ul li .active-link {
+  font-size: 18px;
+  text-decoration: none;
+  /* color: #333333; */
+  font-weight: 560;
+}
