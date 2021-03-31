@@ -65,7 +65,7 @@ function Business() {
             </div>
 
             <div className="col-md-12" align="center">
-              <h4>
+              <h4 style={{ letterSpacing: 1 }}>
                 We are Committed to our customers giving 100% satisfied service
                 and our main goal is to help customer.
               </h4>

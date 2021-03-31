@@ -18,10 +18,7 @@ function Footer() {
         <div class="footerbg">
           <div class="row">
             <div class="f_box ">
-              <h4 className="clr-white">
-                <i className="fa fa-money" style={{ color: '#FFBC01' }}></i>{' '}
-                Best Selling
-              </h4>
+              <h4 className="clr-white">Best Selling</h4>
               <ul className="clr-white">
                 <li className="clr-white">
                   <a href="#!">E-Commerce</a>

@@ -2,6 +2,11 @@
 .newBusiness {
   font-family: 'Roboto', sans-serif;
 }
+.main_area {
+  padding: 30px 15px;
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 75.7%, 0.5);
+  border-radius: 10px;
+}
 .business-content {
   padding: 15px;
 }
@@ -49,7 +54,7 @@
 .bs_content {
   margin-left: 100px;
   padding-top: 10px;
-  box-shadow: 0 2px 5px 0 hsla(0, 0%, 75.7%, 0.5);
+
   border-radius: 10px;
 }
 .tabsContainer {

@@ -1,11 +1,11 @@
-import React from "react";
-import "./ContactUs.css";
+import React from 'react';
+import './ContactUs.css';
 //import Logo from "./res/theAllsafe White All.png";
-import Logo1 from "./res/theAllsafe Blue All.png";
-import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
-import svg from "./res/login_close (1).svg";
-import axios from "axios";
+import Logo1 from './res/theAllsafe Blue All.png';
+import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
+import svg from './res/login_close (1).svg';
+import axios from 'axios';
 // import NavBar from "../NavBar/NavBar";
 //import Particle from "react-particles-js";
 function ContactUs() {
@@ -22,7 +22,7 @@ function ContactUs() {
     console.log(fullname, email, phonenumber, textarea);
     axios
       .post(
-        "https://sheet.best/api/sheets/89643199-b39a-4f9f-bb2a-8b86890e1773",
+        'https://sheet.best/api/sheets/89643199-b39a-4f9f-bb2a-8b86890e1773',
         {
           fullname: fullname,
           email: email,
@@ -47,7 +47,7 @@ function ContactUs() {
                   <img src={Logo1} alt="" height="43.25" />
                 </Link>
               </div>
-              <h2 style={{ textAlign: "center" }}>
+              <h2 style={{ textAlign: 'center' }}>
                 <span>CONTACT</span> <span className="ship">US</span>
               </h2>
               <form onSubmit={handleSubmit}>
@@ -113,7 +113,7 @@ function ContactUs() {
                   <button
                     type="submit"
                     class="btn c_btn_right"
-                    style={{ marginTop: "2em" }}
+                    style={{ marginTop: '2em' }}
                   >
                     Submit <i className="fa fa-check-circle-o"></i>
                   </button>
@@ -137,7 +137,7 @@ function ContactUs() {
                 </div>
                 <div className="contact-content">
                   <h4>
-                    <i className="fa fa-map-marker"></i>{" "}
+                    <i className="fa fa-map-marker"></i>{' '}
                     <a href="#!">London Headquarters</a>
                   </h4>
                   <p>Shelton Street 71-75 Covent Garden</p>
@@ -147,7 +147,7 @@ function ContactUs() {
               </div>
               <div className="address1">
                 <h4>
-                  <i className="fa fa-map-marker"></i>{" "}
+                  <i className="fa fa-map-marker"></i>{' '}
                   <a href="#!">London Headquarters</a>
                 </h4>
                 <p>Shelton Street 71-75 Covent Garden</p>

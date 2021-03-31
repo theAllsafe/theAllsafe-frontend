@@ -1,3 +1,9 @@
+.service-home {
+  padding-bottom: 20px;
+}
+.service-home .container.heading {
+  margin-top: 30px;
+}
 .service-home-box {
   padding: 20px;
   border-radius: 5px;

@@ -4,13 +4,15 @@
   font-weight: 10px;
   margin-bottom: 2em;
   line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .business {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px !important;
+  margin-top: 70px !important;
+  margin-bottom: -30px;
 }
 .b_top_right img {
   width: 500px;
@@ -19,9 +21,8 @@
 .business a {
   text-decoration: none;
 }
-
-.business-header {
-  font-weight: lighter;
+.b_top_left h1 {
+  letter-spacing: 1.3px;
 }
 
 .business-button {
@@ -366,12 +367,12 @@
 }
 .stepCard1:hover i,
 .sstepCard1:hover a {
-  color: #ffc107;
+  color: gold;
   transition: 0.5s;
 }
 .stepCard2:hover i,
 .sstepCard2:hover a {
-  color: #316698;
+  color: orangered;
   transition: 0.5s;
 }
 .stepCard3:hover i,
@@ -380,13 +381,13 @@
   transition: 0.5s;
 }
 .stepBtn.color1 {
-  background-color: #ffc107;
+  background-color: #316698;
 }
 .stepBtn.color2 {
   background-color: #316698;
 }
 .stepBtn.color3 {
-  background-color: #28a745;
+  background-color: #316698;
 }
 
 /* .stepCard:hover .stepBtn {
@@ -444,6 +445,7 @@
   .btnContainer {
     display: flex;
   }
+
   .business-button i {
     display: none;
   }

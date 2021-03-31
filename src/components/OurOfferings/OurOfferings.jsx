@@ -12,7 +12,7 @@ import Fade from 'react-reveal/Fade';
 function OurOfferings() {
   return (
     <section class="service-home">
-      <hr style={{ marginTop: '-3rem', marginBottom: '3rem' }} />
+      <hr />
       <div class="container">
         <div class="container heading">
           <Fade top>
