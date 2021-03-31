@@ -50,18 +50,19 @@
 }
 .contact-form-title-1 {
   font-family: 'Roboto';
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: bolder;
   color: #fff;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 7px;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 .contact-form-title-2 {
   font-family: 'Roboto';
-  font-size: 20px;
+  font-size: 15px;
+
   color: rgb(230, 230, 230);
   line-height: 1.5;
   text-align: center;
