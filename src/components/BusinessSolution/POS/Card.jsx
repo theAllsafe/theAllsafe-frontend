@@ -20,7 +20,7 @@ const Card = ({ data, width }) => {
       </div>
       <div className="buttonContainer">
         <button className="btn btn-blue">LIVE DEMO</button>
-        <Link to="/inventory" className="btn btn-darkblue">
+        <Link to="/" className="btn btn-darkblue">
           BUY NOW
         </Link>
       </div>

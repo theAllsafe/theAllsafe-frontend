@@ -1,24 +1,29 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Collections from "./components/Collections/Collections";
-import HotDeals from "./components/HotDeals/HotDeals";
-import Business from "./components/Business/Business";
-import Home from "./Home";
-import BusinessSolution from "./components/BusinessSolution/BusinessSolution";
-import ContactUs from "./components/ContactUs/ContactUs";
-import Applications from "./components/Applications/Applications";
-import WebDevelopment from "./components/WebDevelopment/WebDevelopment";
-import SignIn from "./components/SignIn/SignIn";
-import SignUp from "./components/SignUp/SignUp";
-import AndroidDevelopment from "./components/AndroidDevelopment/AndroidDevelopment";
-import iosDevelopment from "./components/iosDeveleopment/iosDevelopment";
-import AI from "./components/AI/AI";
-import Maintainance from "./components/Maintainance/Maintainance";
-import UI from "./components/UIdesign/UI";
-import corporateOutsourcing from "./components/CorporateOutsourcing/corporateOutsourcing";
-import privacy from "./components/Privacypolicy/privacy";
-import Accounts from "./components/Accounts/Accounts";
-import Logins from "./components/Logins/Logins";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Collections from './components/Collections/Collections';
+import HotDeals from './components/HotDeals/HotDeals';
+import Business from './components/Business/Business';
+import Home from './Home';
+import BusinessSolution from './components/BusinessSolution/BusinessSolution';
+import ContactUs from './components/ContactUs/ContactUs';
+import Applications from './components/Applications/Applications';
+import WebDevelopment from './components/WebDevelopment/WebDevelopment';
+import SignIn from './components/SignIn/SignIn';
+import SignUp from './components/SignUp/SignUp';
+import AndroidDevelopment from './components/AndroidDevelopment/AndroidDevelopment';
+import iosDevelopment from './components/iosDeveleopment/iosDevelopment';
+import AI from './components/AI/AI';
+import Maintainance from './components/Maintainance/Maintainance';
+import UI from './components/UIdesign/UI';
+import corporateOutsourcing from './components/CorporateOutsourcing/corporateOutsourcing';
+import privacy from './components/Privacypolicy/privacy';
+import Accounts from './components/Accounts/Accounts';
+import Logins from './components/Logins/Logins';
+
+import CollectionWrapper from './components/BusinessSolution/CollectionWrapper';
+import ICollection from './components/BusinessSolution/Inventory/Collections';
+import POSCollection from './components/BusinessSolution/POS/Collections';
+import Inventory from './components/BusinessSolution/Inventory/InventoryMgmnt';
 
 const BaseRoute = () => {
   return (
@@ -27,7 +32,12 @@ const BaseRoute = () => {
       <Route exact path="/collections/" component={Collections} />
       <Route exact path="/hotdeals/" component={HotDeals} />
       <Route exact path="/business/" component={Business} />
-      <Route exact path="/businessSolution" component={BusinessSolution} />
+
+      <Route exact path="/businessSolution" component={CollectionWrapper} />
+      <Route exact path="/collection/inventory" component={ICollection} />
+      <Route exact path="/inventory" component={Inventory} />
+      <Route exact path="/collection/pos" component={POSCollection} />
+
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/applications" component={Applications} />
       <Route exact path="/webdevelopment" component={WebDevelopment} />

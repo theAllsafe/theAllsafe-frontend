@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import './BusinessSolution.css';
+import '../BusinessSolution.css';
 //import BlockMenu from "../BlockMenu/BlockMenu";
-import banner from './res/banner.jpg';
-import p1 from './res/p1.JPG';
-import p2 from './res/p2.JPG';
-import p3 from './res/p3.JPG';
-import Footer from '../Footer/Footer';
-import NavBar from '../NavBar/NavBar';
+import banner from '../res/banner.jpg';
+import p1 from '../res/p1.JPG';
+import p2 from '../res/p2.JPG';
+import p3 from '../res/p3.JPG';
+import Footer from '../../Footer/Footer';
+import NavBar from '../../NavBar/NavBar';
 import { Tab, Nav, Tabs } from 'react-bootstrap';
-import Overview from './Overview';
-import Features from './Features';
-import ReleaseHistory from './ReleaseHistory';
-import RelatedDeals from './RelatedDeals';
+import Overview from '../Overview';
+import Features from '../Features';
+import ReleaseHistory from '../ReleaseHistory';
+import RelatedDeals from '../RelatedDeals';
 
-function Inventory() {
+function POS() {
   let prices = [1499, 1599, 1699];
   let newPrices = [999, 1299, 1399];
   const [pricing, setPricing] = useState(prices[0]);
@@ -36,7 +36,7 @@ function Inventory() {
           </div>
 
           <div className="col-md-5 bs_content">
-            <h2 className="business-heading">INVENTORY MANANGEMENT</h2>
+            <h2 className="business-heading">POS MANANGEMENT</h2>
             <p className="para">
               Product Description
               <br />
@@ -106,4 +106,4 @@ function Inventory() {
     </>
   );
 }
-export default Inventory;
+export default POS;
