@@ -15,6 +15,52 @@
   z-index: 1;
   margin-top: 30px;
 }
+.social-network {
+  margin-top: 0;
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+.social-network li {
+  display: inline;
+}
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(1turn);
+  -webkit-transform: rotate(1turn);
+  -ms--transform: rotate(1turn);
+  transform: rotate(1turn);
+  transition: all 0.2s;
+}
+.social-circle li i {
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+}
+.container-contact .info {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  z-index: 5;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.container-contact .info i:hover {
+  color: #78b5db;
+  transition: all 0.3s;
+}
 .contactus {
   width: 670px;
   background: #fff;

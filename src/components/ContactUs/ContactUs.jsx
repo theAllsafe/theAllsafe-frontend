@@ -2,9 +2,44 @@ import React from 'react';
 import './ContactUs.css';
 import axios from 'axios';
 import NavBar from '../NavBar/NavBar';
-import bg from './res/bg-01.jpg';
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 
 function ContactUs() {
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Title as="h3">Reach Us</Popover.Title>
+      <Popover.Content>
+        <i className="ri-map-pin-fill"></i>
+        <strong className="pl-1">Address</strong>
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id perferendis
+        magnam rem. Delectus, atque similique?
+        <br />
+        <ul class="social-network social-circle">
+          <li>
+            <a href="#!" class="icoFacebook" title="Facebook">
+              <i className="ri-facebook-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="icoTwitter" title="Twitter">
+              <i className="ri-twitter-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="icoLinkedin" title="Linkedin">
+              <i className="ri-linkedin-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" class="icoRss" title="Instagram">
+              <i className="ri-instagram-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </Popover.Content>
+    </Popover>
+  );
   const handleSubmit = (e) => {
     e.preventDefault();
     const fullname = e.target.elements.fullname.value;
@@ -32,6 +67,15 @@ function ContactUs() {
       <NavBar />
       <div className="container-contact">
         <div className="contactus">
+          <div className="info">
+            <OverlayTrigger
+              trigger="click"
+              placement="bottom"
+              overlay={popover}
+            >
+              <i className="fas fa-info-circle"></i>
+            </OverlayTrigger>
+          </div>
           <div className="c_formTitle">
             <span class="contact-form-title-1">Contact Us</span>
             <span class="contact-form-title-2">
