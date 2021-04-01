@@ -1,11 +1,7 @@
 .acc {
-  margin-top: 100px;
+  height: 100vh;
+  padding-top: 30px;
 }
-
-.accounts-content {
-  margin-top: 0px;
-}
-
 .accounts-register-form {
   height: calc(2.5em + 0.75rem + 2px);
   /* width: 400px; */
@@ -27,7 +23,7 @@
   color: black;
   position: absolute;
   margin-left: 10px;
-  padding: 19px 20px;
+  padding: 20px 20px;
   pointer-events: none;
 }
 
@@ -47,25 +43,37 @@
 .login:visited {
   border-bottom: 10px solid #6c5ea6;
 }
-
+.wrapperReg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 30px;
+}
 .login {
   border-radius: 4px;
   text-align: center;
-  padding: 20px;
-  width: auto;
+  width: 150px !important;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   /* border-bottom: 10px solid #6c5ea6; */
   background-color: white;
   margin: 5px;
+  padding: 25px !important;
   cursor: pointer;
-}
-.login h3 {
-  font-size: 28px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid transparent;
 }
 
 .loginSection {
   margin-top: -10px;
-  padding: 150px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightblue;
   background-image: linear-gradient(
     136deg,
@@ -74,15 +82,10 @@
   );
   background-size: 200% 100%;
   animation: gradient 5s ease infinite;
-
-  /* background: #172337; */
-  width: auto;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  z-index: 20;
-  overflow: hidden;
-  max-width: 50rem;
+}
+.icon-handles {
+  padding-top: 50px;
 }
 @keyframes gradient {
   0% {
@@ -99,14 +102,14 @@
   text-align: center;
   font-size: 13px;
   font-weight: 400;
-  margin-top: 26px;
-  width: auto;
-  max-width: 100%;
+  margin-top: 10px;
+  height: 40px;
   font-family: 'Roboto', sans-serif;
 }
 
 .login i {
   color: black;
+  height: 30px;
 }
 
 html,
@@ -114,7 +117,14 @@ body {
   margin: 0;
   height: 100%;
 }
-
+.formContainer1,
+.formContainer2,
+.formContainer4 {
+  padding-top: 50px;
+}
+.formContainer3 {
+  padding-top: 30px;
+}
 .register-form-div {
   margin-top: 5px;
   width: 700px;

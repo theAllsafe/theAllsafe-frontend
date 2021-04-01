@@ -12,25 +12,37 @@ const Accounts = () => {
   const [businessStyle, setbusinessStyle] = useState(null);
   const [adminStyle, setadminStyle] = useState(null);
   const changeclientStyle = () => {
-    setclientStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
+    setclientStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'gold',
+    });
     setcorporateStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changecorporatetStyle = () => {
-    setcorporateStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
+    setcorporateStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+    });
     setclientStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changebusinessStyle = () => {
-    setbusinessStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
+    setbusinessStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'orange',
+    });
     setclientStyle(null);
     setcorporateStyle(null);
     setadminStyle(null);
   };
   const changeadminStyle = () => {
-    setadminStyle({ boxShadow: '0 0 30px rgb(36, 99, 161)' });
+    setadminStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'purple',
+    });
     setclientStyle(null);
     setcorporateStyle(null);
     setbusinessStyle(null);
@@ -66,8 +78,8 @@ const Accounts = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="loginSection">
-              <div className="row">
-                <div className="col-md-6" onClick={schoolClick}>
+              <div className="wrapperReg">
+                <div onClick={schoolClick}>
                   <div
                     className="login"
                     onClick={changeclientStyle}
@@ -77,7 +89,7 @@ const Accounts = () => {
                     <h3>Client Registration</h3>
                   </div>
                 </div>
-                <div className="col-md-6" onClick={vendorClick}>
+                <div onClick={vendorClick}>
                   <div
                     className="login"
                     onClick={changecorporatetStyle}
@@ -87,11 +99,10 @@ const Accounts = () => {
                     <h3>Corporate Registration</h3>
                   </div>
                 </div>
-              </div>
-              <div className="row mt-5">
-                <div className="col-md-6" onClick={instructorClick}>
+
+                <div onClick={instructorClick}>
                   <div
-                    className="login pb-2"
+                    className="login"
                     onClick={changebusinessStyle}
                     style={businessStyle}
                   >
@@ -99,7 +110,7 @@ const Accounts = () => {
                     <h3>Business Partner Registration</h3>
                   </div>
                 </div>
-                <div className="col-md-6" onClick={adminClick}>
+                <div onClick={adminClick}>
                   <div
                     className="login"
                     onClick={changeadminStyle}
@@ -110,7 +121,8 @@ const Accounts = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 icon-handles mt-5" align="center">
+
+              <div class="icon-handles">
                 <ul class="social-network social-circle">
                   <li>
                     <a href="#!" class="icoFacebook" title="Facebook">
@@ -138,7 +150,7 @@ const Accounts = () => {
             </div>
           </div>
           {isSchool && (
-            <div className="col-md-8">
+            <div className="col-md-8 formContainer1">
               <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
@@ -239,7 +251,7 @@ const Accounts = () => {
             </div>
           )}
           {isVendor && (
-            <div className="col-md-8">
+            <div className="col-md-8 formContainer2">
               <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
@@ -341,7 +353,7 @@ const Accounts = () => {
           )}
 
           {isInstructor && (
-            <div className="col-md-8">
+            <div className="col-md-8 formContainer3">
               <div className="accounts-content" style={{ marginTop: '14px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
@@ -442,7 +454,7 @@ const Accounts = () => {
             </div>
           )}
           {isAdmin && (
-            <div className="col-md-8">
+            <div className="col-md-8 formContainer4">
               <div className="accounts-content" style={{ marginTop: '16px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>

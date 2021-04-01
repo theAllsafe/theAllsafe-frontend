@@ -8,7 +8,7 @@ const RelatedDeals = () => {
   return (
     <div className="x_container">
       {latestCollection.map((item) => (
-        <Card width={350} key={item.id} data={item} />
+        <Card width={330} key={item.id} data={item} />
       ))}
     </div>
   );
