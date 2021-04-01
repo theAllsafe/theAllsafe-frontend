@@ -86,6 +86,11 @@
 }
 .icon-handles {
   padding-top: 50px;
+  margin-left: -40px;
+}
+.icon-handles li {
+  display: inline;
+  padding: 0 10px;
 }
 @keyframes gradient {
   0% {

@@ -13,8 +13,8 @@
 .exploreBtn {
   position: absolute;
   z-index: 1;
-  bottom: 20px;
-  right: 260px;
+  bottom: 80px;
+  right: 60px;
   border: none;
   background-color: gold;
   width: 120px;
