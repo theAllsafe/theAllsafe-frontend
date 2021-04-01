@@ -148,7 +148,7 @@ const Accounts = () => {
 
                 <div className="register-form-div" align="center">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <form>
                         <div class="mb-3">
                           <i class="fa fa-user"></i>

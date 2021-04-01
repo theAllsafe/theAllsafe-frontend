@@ -64,13 +64,19 @@
 }
 
 .loginSection {
-  margin-top: 0px;
-  padding: 150px 25px;
+  margin-top: -10px;
+  padding: 150px 50px;
   background-color: lightblue;
-  /* background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%); */
-  background: url('./res/gradient-network-connection-background_23-2148865393.jpg');
+  background-image: linear-gradient(
+    136deg,
+    rgb(116, 235, 213) 0%,
+    rgb(63, 43, 150) 100%
+  );
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+
   /* background: #172337; */
-  width: 100%;
+  width: auto;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -78,7 +84,17 @@
   overflow: hidden;
   max-width: 50rem;
 }
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .login h3 {
   text-align: center;
   font-size: 13px;

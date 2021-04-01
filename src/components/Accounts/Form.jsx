@@ -6,7 +6,7 @@ const FormContainer = () => {
     <div className="formContainer">
       <Form>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-12">
             <InputGroup>
               <InputGroup.Prepend>
                 <InputGroup.Text>
