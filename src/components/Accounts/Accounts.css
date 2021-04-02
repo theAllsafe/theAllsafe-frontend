@@ -49,6 +49,7 @@
   justify-items: center;
   align-items: center;
   grid-gap: 30px;
+  padding-top: 110px;
 }
 .login {
   border-radius: 4px;
@@ -58,14 +59,14 @@
   /* border-bottom: 10px solid #6c5ea6; */
   background-color: white;
   margin: 5px;
-  padding: 25px !important;
+  padding: 20px !important;
   cursor: pointer;
   height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 8px solid transparent;
+  border: 5px solid transparent;
 }
 
 .loginSection {
@@ -81,9 +82,10 @@
     rgb(63, 43, 150) 100%
   );
   background-size: 200% 100%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 10s ease infinite !important;
   height: 100vh;
 }
+
 .icon-handles {
   padding-top: 50px;
   margin-left: -40px;
@@ -107,14 +109,13 @@
   text-align: center;
   font-size: 13px;
   font-weight: 400;
-  margin-top: 10px;
   height: 40px;
   font-family: 'Roboto', sans-serif;
 }
 
 .login i {
-  color: black;
-  height: 30px;
+  color: green;
+  height: 15px;
 }
 
 html,
@@ -124,19 +125,25 @@ body {
 }
 .formContainer1,
 .formContainer2,
+.formContainer3,
 .formContainer4 {
-  padding-top: 50px;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.formContainer3 {
-  padding-top: 30px;
-}
+
 .register-form-div {
-  margin-top: 5px;
+  margin-top: 15px;
   width: 700px;
   margin: auto;
   position: relative;
 }
-
+.accounts-content .heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .selected-border {
   border-bottom: 10px solid #6c5ea6;
 }

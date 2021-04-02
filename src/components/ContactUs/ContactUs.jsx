@@ -34,7 +34,7 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="col-md-8 formContainer right_contact">
+          <div className="col-md-8  right_contact">
             <div className="accounts-content" style={{ marginTop: '16px' }}>
               <div className="heading">
                 <h2 style={{ textAlign: 'center' }}>

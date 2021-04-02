@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "./Logins.css";
-import NavBar from "../NavBar/NavBar";
-import facebook from "./res/facebook.svg";
-import googleplus from "./res/google.svg";
-import linkedin from "./res/linkedin.svg";
+import React, { useState, useEffect } from 'react';
+import './Logins.css';
+import NavBar from '../NavBar/CustomNavbar/CustomNavbar';
+import facebook from './res/facebook.svg';
+import googleplus from './res/google.svg';
+import linkedin from './res/linkedin.svg';
 
 const Logins = () => {
   const [isSchool, setisSchool] = useState(true);
@@ -14,26 +14,49 @@ const Logins = () => {
   const [corporateStyle, setcorporateStyle] = useState(null);
   const [businessStyle, setbusinessStyle] = useState(null);
   const [adminStyle, setadminStyle] = useState(null);
+  useEffect(() => {
+    setclientStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+      green: 'green',
+    });
+  }, []);
   const changeclientStyle = () => {
-    setclientStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setclientStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+      green: 'green',
+    });
     setcorporateStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changecorporatetStyle = () => {
-    setcorporateStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setcorporateStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+      green: 'green',
+    });
     setclientStyle(null);
     setbusinessStyle(null);
     setadminStyle(null);
   };
   const changebusinessStyle = () => {
-    setbusinessStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setbusinessStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+      green: 'green',
+    });
     setclientStyle(null);
     setcorporateStyle(null);
     setadminStyle(null);
   };
   const changeadminStyle = () => {
-    setadminStyle({ boxShadow: "0 0 30px rgb(36, 99, 161)" });
+    setadminStyle({
+      boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
+      borderBottomColor: 'green',
+      green: 'green',
+    });
     setclientStyle(null);
     setcorporateStyle(null);
     setbusinessStyle(null);
@@ -65,55 +88,360 @@ const Logins = () => {
   return (
     <>
       <NavBar />
-      <section className="accounts-section">
+      <section className="acc">
         <div className="row">
+          {isSchool && (
+            <div className="col-md-8 x">
+              <div className="accounts-content">
+                <div className="heading">
+                  <h2 style={{ textAlign: 'center' }}>
+                    Client <span className="ship">Login</span>
+                  </h2>
+                </div>
+                <div className="form-div" align="center">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p style={{ fontWeight: '600', marginTop: -40 }}>
+                        Login with Social accounts
+                      </p>
+                      <div className="contact-icons mt-1 mb-1">
+                        <a href="#!" class="" title="Facebook">
+                          <img src={facebook} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={googleplus} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={linkedin} alt="" />
+                        </a>
+                      </div>
+                      <div className="login_form_title mt-4">
+                        <div className="login-title">OR</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <i class="fa fa-user"></i>
+
+                        <input
+                          type="text"
+                          class="form-control accounts-form"
+                          placeholder="Email"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <i className="fas fa-lock"></i>
+
+                        <input
+                          type="password"
+                          class="form-control accounts-form"
+                          placeholder="Password"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div className="mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary accounts-btn"
+                        >
+                          Login
+                        </button>
+                      </div>
+                      <div className="register-link mt-3">
+                        New to theAllsafe?{' '}
+                        <a href="/accounts">
+                          <span>Click here to register</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          {isVendor && (
+            <div className="col-md-8 x">
+              <div className="accounts-content" style={{ marginTop: '18px' }}>
+                <div className="heading">
+                  <h2 style={{ textAlign: 'center' }}>
+                    Corporate <span className="ship">Login</span>
+                  </h2>
+                </div>
+                <div className="form-div" align="center">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p style={{ fontWeight: '600', marginTop: -40 }}>
+                        Login with Social accounts
+                      </p>
+                      <div className="contact-icons mt-1 mb-1">
+                        <a href="#!" class="" title="Facebook">
+                          <img src={facebook} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={googleplus} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={linkedin} alt="" />
+                        </a>
+                      </div>
+                      <div className="login_form_title mt-4">
+                        <div className="login-title">OR</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <i class="fa fa-user"></i>
+
+                        <input
+                          type="text"
+                          class="form-control accounts-form"
+                          placeholder="Email"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <i className="fas fa-lock"></i>
+
+                        <input
+                          type="password"
+                          class="form-control accounts-form"
+                          placeholder="Password"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div className="mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary accounts-btn"
+                        >
+                          Login
+                        </button>
+                      </div>
+                      <div className="register-link mt-3">
+                        New to theAllsafe?{' '}
+                        <a href="/accounts">
+                          <span>Click here to register</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {isInstructor && (
+            <div className="col-md-8 x">
+              <div className="accounts-content" style={{ marginTop: '18px' }}>
+                <div className="heading">
+                  <h2 style={{ textAlign: 'center' }}>
+                    Business Partner <span className="ship">Login</span>
+                  </h2>
+                </div>
+                <div className="form-div" align="center">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p style={{ fontWeight: '600', marginTop: -40 }}>
+                        Login with Social accounts
+                      </p>
+                      <div className="contact-icons mt-1 mb-1">
+                        <a href="#!" class="" title="Facebook">
+                          <img src={facebook} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={googleplus} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={linkedin} alt="" />
+                        </a>
+                      </div>
+                      <div className="login_form_title mt-4">
+                        <div className="login-title">OR</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <i class="fa fa-user"></i>
+
+                        <input
+                          type="text"
+                          class="form-control accounts-form"
+                          placeholder="Email"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <i className="fas fa-lock"></i>
+
+                        <input
+                          type="password"
+                          class="form-control accounts-form"
+                          placeholder="Password"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div className="mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary accounts-btn"
+                        >
+                          Login
+                        </button>
+                      </div>
+                      <div className="register-link mt-3">
+                        New to theAllsafe?{' '}
+                        <a href="/accounts">
+                          <span>Click here to register</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {isAdmin && (
+            <div className="col-md-8 x">
+              <div className="accounts-content">
+                <div className="heading">
+                  <h2 style={{ textAlign: 'center' }}>
+                    Admin <span className="ship">Login</span>
+                  </h2>
+                </div>
+                <div className="form-div" align="center">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <p style={{ fontWeight: '600', marginTop: -40 }}>
+                        Login with Social accounts
+                      </p>
+                      <div className="contact-icons mt-1 mb-1">
+                        <a href="#!" class="" title="Facebook">
+                          <img src={facebook} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={googleplus} alt="" />
+                        </a>
+                        <a href="#!" class="" title="Facebook">
+                          <img src={linkedin} alt="" />
+                        </a>
+                      </div>
+                      <div className="login_form_title mt-4">
+                        <div className="login-title">OR</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <i class="fa fa-user"></i>
+
+                        <input
+                          type="text"
+                          class="form-control accounts-form"
+                          placeholder="Email"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <i className="fas fa-lock"></i>
+
+                        <input
+                          type="password"
+                          class="form-control accounts-form"
+                          placeholder="Password"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                      <div className="mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary accounts-btn"
+                        >
+                          Login
+                        </button>
+                      </div>
+                      <div className="register-link mt-3">
+                        New to theAllsafe?{' '}
+                        <a href="/accounts">
+                          <span>Click here to register</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="col-md-4">
-            <div className="login-section">
-              <div className="row">
-                <div className="col-md-6" onClick={schoolClick}>
+            <div className="loginSection">
+              <div className="wrapperReg">
+                <div onClick={schoolClick}>
                   <div
                     className="login"
                     onClick={changeclientStyle}
                     style={clientStyle}
                   >
-                    <i className="fa fa-user fa-2x"></i>
-                    <h3>Client Login</h3>
+                    <i
+                      style={{
+                        color: clientStyle ? clientStyle['green'] : '',
+                      }}
+                      className="fa fa-user fa-2x"
+                    ></i>
+                    <h3>Client Registration</h3>
                   </div>
                 </div>
-                <div className="col-md-6" onClick={vendorClick}>
+                <div onClick={vendorClick}>
                   <div
                     className="login"
                     onClick={changecorporatetStyle}
                     style={corporateStyle}
                   >
-                    <i className="fa fa-user fa-2x"></i>
-                    <h3>Corporate Login</h3>
+                    <i
+                      style={{
+                        color: corporateStyle ? corporateStyle['green'] : '',
+                      }}
+                      className="fa fa-user fa-2x"
+                    ></i>
+                    <h3>Corporate Registration</h3>
                   </div>
                 </div>
-              </div>
-              <div className="row mt-5">
-                <div className="col-md-6" onClick={instructorClick}>
+
+                <div onClick={instructorClick}>
                   <div
                     className="login"
                     onClick={changebusinessStyle}
                     style={businessStyle}
                   >
-                    <i className="fa fa-user fa-2x"></i>
-                    <h3>Business Partner Login</h3>
+                    <i
+                      style={{
+                        color: businessStyle ? businessStyle['green'] : '',
+                      }}
+                      className="fa fa-user fa-2x"
+                    ></i>
+                    <h3>Business Partner Registration</h3>
                   </div>
                 </div>
-                <div className="col-md-6" onClick={adminClick}>
+                <div onClick={adminClick}>
                   <div
                     className="login"
                     onClick={changeadminStyle}
                     style={adminStyle}
                   >
-                    <i className="fa fa-user fa-2x"></i>
-                    <h3>Admin Login</h3>
+                    <i
+                      style={{ color: adminStyle ? adminStyle['green'] : '' }}
+                      className="fa fa-user fa-2x"
+                    ></i>
+                    <h3>Admin Registration</h3>
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 icon-handles mt-5" align="center">
+
+              <div class="icon-handles">
                 <ul class="social-network social-circle">
                   <li>
                     <a href="#!" class="icoFacebook" title="Facebook">
@@ -140,270 +468,6 @@ const Logins = () => {
               </div>
             </div>
           </div>
-          {isSchool && (
-            <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "18px" }}>
-                <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
-                    Client <span className="ship">Login</span>
-                  </h2>
-                </div>
-                <div className="form-div" align="center">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h4 className="mb-3">Continue with Mobile</h4>
-
-                      <p style={{ fontWeight: "600" }}>
-                        You'll recieve a four-digit code to verify next
-                      </p>
-                      <form>
-                        <div class="mb-3">
-                          <i class="fa fa-phone"></i>
-
-                          <input
-                            type="text"
-                            class="form-control accounts-form"
-                            placeholder="Mobile Number"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary accounts-btn"
-                          >
-                            Request an OTP
-                          </button>
-                        </div>
-                        <div className="register-link mt-3">
-                          New to theAllsafe?{" "}
-                          <a href="/accounts">
-                            <span>Click here to register</span>
-                          </a>
-                        </div>
-                      </form>
-                      <div className="login_form_title mt-4">
-                        <div className="login-title">OR</div>
-                      </div>
-                      <p style={{ fontWeight: "600" }}>
-                        Login with Social accounts
-                      </p>
-                      <div className="contact-icons mt-3 mb-3">
-                        <a href="#!" class="" title="Facebook">
-                          <img src={facebook} alt="" />
-                        </a>
-                        <a href="#!" class="" title="Facebook">
-                          <img src={googleplus} alt="" />
-                        </a>
-                        <a href="#!" class="" title="Facebook">
-                          <img src={linkedin} alt="" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-          {isVendor && (
-            <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "18px" }}>
-                <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
-                    Corporate <span className="ship">Login</span>
-                  </h2>
-                </div>
-                <div className="form-div" align="center">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h4 className="mb-3">Continue with Mobile</h4>
-                      <p style={{ fontWeight: "600" }}>
-                        You'll recieve a four-digit code to verify next
-                      </p>
-                      <form>
-                        <div class="mb-3">
-                          <i class="fa fa-phone"></i>
-
-                          <input
-                            type="text"
-                            class="form-control accounts-form"
-                            placeholder="Mobile Number"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary accounts-btn"
-                          >
-                            Request an OTP
-                          </button>
-                        </div>
-                        <div className="register-link mt-3">
-                          New to theAllsafe?{" "}
-                          <a href="/accounts">
-                            <span>Click here to register</span>
-                          </a>
-                        </div>
-
-                        <div className="login_form_title mt-4">
-                          <div className="login-title">OR</div>
-                        </div>
-                        <p style={{ fontWeight: "600" }}>
-                          Login with Social accounts
-                        </p>
-                        <div className="contact-icons mt-3">
-                          <a href="#!" class="" title="Facebook">
-                            <img src={facebook} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={googleplus} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={linkedin} alt="" />
-                          </a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {isInstructor && (
-            <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "18px" }}>
-                <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
-                    Business Partner <span className="ship">Login</span>
-                  </h2>
-                </div>
-                <div className="form-div" align="center">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h4 className="mb-3">Continue with Mobile</h4>
-                      <p style={{ fontWeight: "600" }}>
-                        You'll recieve a four-digit code to verify next
-                      </p>
-                      <form>
-                        <div class="mb-3">
-                          <i class="fa fa-phone"></i>
-
-                          <input
-                            type="text"
-                            class="form-control accounts-form"
-                            placeholder="Mobile Number"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary accounts-btn"
-                          >
-                            Request an OTP
-                          </button>
-                        </div>
-                        <div className="register-link mt-3">
-                          New to theAllsafe?{" "}
-                          <a href="/accounts">
-                            <span>Click here to register</span>
-                          </a>
-                        </div>
-                        <div className="login_form_title mt-4">
-                          <div className="login-title">OR</div>
-                        </div>
-                        <p style={{ fontWeight: "600" }}>
-                          Login with Social accounts
-                        </p>
-                        <div className="contact-icons mt-3">
-                          <a href="#!" class="" title="Facebook">
-                            <img src={facebook} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={googleplus} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={linkedin} alt="" />
-                          </a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {isAdmin && (
-            <div className="col-md-8">
-              <div className="accounts-content" style={{ marginTop: "18px" }}>
-                <div className="heading">
-                  <h2 style={{ textAlign: "center" }}>
-                    Admin <span className="ship">Login</span>
-                  </h2>
-                </div>
-                <div className="form-div" align="center">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h4 className="mb-3">Continue with Mobile</h4>
-                      <p style={{ fontWeight: "600" }}>
-                        You'll recieve a four-digit code to verify next
-                      </p>
-                      <form>
-                        <div class="mb-3">
-                          <i class="fa fa-phone"></i>
-
-                          <input
-                            type="text"
-                            class="form-control accounts-form"
-                            placeholder="Mobile Number"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary accounts-btn"
-                          >
-                            Request an OTP
-                          </button>
-                        </div>
-                        <div className="register-link mt-3">
-                          New to theAllsafe?{" "}
-                          <a href="/accounts">
-                            <span>Click here to register</span>
-                          </a>
-                        </div>
-                        <div className="login_form_title mt-4">
-                          <div className="login-title">OR</div>
-                        </div>
-                        <p style={{ fontWeight: "600" }}>
-                          Login with Social accounts
-                        </p>
-                        <div className="contact-icons mt-3">
-                          <a href="#!" class="" title="Facebook">
-                            <img src={facebook} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={googleplus} alt="" />
-                          </a>
-                          <a href="#!" class="" title="Facebook">
-                            <img src={linkedin} alt="" />
-                          </a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </section>
 
