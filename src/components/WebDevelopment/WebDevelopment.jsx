@@ -138,15 +138,15 @@ function WebDevelopment() {
           <div className="section4">
             <div className="leftCard">
               <h1>Web Development Frameworks</h1>
-              <p style={{ fontSize: 18 }}>
+              <p style={{ fontSize: 16, letterSpacing: '1px' }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                 expedita fuga distinctio molestiae consequuntur impedit dolore
                 voluptatem totam. Facere iure suscipit sapiente, excepturi,
                 asperiores soluta aliquam veritatis a corporis, impedit
-                exercitationem sequi et adipisci cupiditate? Officiis quae
-                <br />
-                asperiores soluta aliquam veritatis a corporis, impedit
-                exercitationem sequi et adipisci cupiditate? Officiis quae
+                exercitationem sequi et adipisci cupiditate? Officiis quae,
+                soluta aliquam veritatis a corporis, impedit exercitationem
+                sequi et adipisci cupiditate? Officiis quae Facere iure suscipit
+                sapiente, excepturi, asperiores.
               </p>
             </div>
             <div className="techs">

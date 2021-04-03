@@ -79,9 +79,13 @@
   background-color: #316698;
   text-align: left;
   color: #fff;
-  padding: 50px;
+  padding: 30px !important;
   width: 40%;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .techs {
   display: grid;
