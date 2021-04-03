@@ -4,6 +4,8 @@ import NavBar from '../NavBar/CustomNavbar/CustomNavbar';
 import facebook from './res/facebook.svg';
 import googleplus from './res/google.svg';
 import linkedin from './res/linkedin.svg';
+import close from '../NavBar/res/cancel.png';
+import { Link } from 'react-router-dom';
 
 const Logins = () => {
   const [isSchool, setisSchool] = useState(true);
@@ -87,7 +89,7 @@ const Logins = () => {
   };
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <section className="acc">
         <div className="row">
           {isSchool && (
@@ -378,6 +380,11 @@ const Logins = () => {
           )}
 
           <div className="col-md-4">
+            <div className="close2">
+              <Link to="/">
+                <img src={close} alt="close" />
+              </Link>
+            </div>
             <div className="loginSection">
               <div className="wrapperReg">
                 <div onClick={schoolClick}>

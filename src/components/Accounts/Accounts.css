@@ -11,6 +11,13 @@
   padding-left: 140px;
   padding-right: 140px;
 }
+.close img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
 
 .accounts-btn:hover {
   color: white;
@@ -66,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 .loginSection {

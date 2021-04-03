@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Accounts.css';
 import NavBar from '../NavBar/CustomNavbar/CustomNavbar';
+import close from '../NavBar/res/cancel.png';
+import { Link } from 'react-router-dom';
 
 import { Fade } from 'react-reveal';
 
@@ -86,7 +88,7 @@ const Accounts = () => {
   };
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <section className="acc">
         <div className="row">
           <div className="col-md-4">
@@ -185,6 +187,11 @@ const Accounts = () => {
           {isSchool && (
             <Fade right>
               <div className="col-md-8 formContainer1">
+                <div className="close">
+                  <Link to="/">
+                    <img src={close} alt="close" />
+                  </Link>
+                </div>
                 <div className="accounts-content" style={{ marginTop: '16px' }}>
                   <div className="heading">
                     <h2 style={{ textAlign: 'center' }}>
@@ -280,6 +287,11 @@ const Accounts = () => {
           {isVendor && (
             <Fade right>
               <div className="col-md-8 formContainer2">
+                <div className="close">
+                  <Link to="/">
+                    <img src={close} alt="close" />
+                  </Link>
+                </div>
                 <div className="accounts-content" style={{ marginTop: '16px' }}>
                   <div className="heading">
                     <h2 style={{ textAlign: 'center' }}>
@@ -380,6 +392,11 @@ const Accounts = () => {
           {isInstructor && (
             <Fade right>
               <div className="col-md-8 formContainer3">
+                <div className="close">
+                  <Link to="/">
+                    <img src={close} alt="close" />
+                  </Link>
+                </div>
                 <div className="accounts-content" style={{ marginTop: '14px' }}>
                   <div className="heading">
                     <h2 style={{ textAlign: 'center' }}>
@@ -484,6 +501,11 @@ const Accounts = () => {
           {isAdmin && (
             <Fade right>
               <div className="col-md-8 formContainer4">
+                <div className="close">
+                  <Link to="/">
+                    <img src={close} alt="close" />
+                  </Link>
+                </div>
                 <div className="accounts-content" style={{ marginTop: '16px' }}>
                   <div className="heading">
                     <h2 style={{ textAlign: 'center' }}>
