@@ -92,7 +92,9 @@ const Accounts = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="loginSection">
-              <div className="logow"></div>
+              <Link to="/">
+                <div className="logow"></div>
+              </Link>
               <div className="wrapperReg">
                 <div onClick={schoolClick}>
                   <div

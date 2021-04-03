@@ -94,7 +94,9 @@ const Logins = () => {
         <div className="row">
           {isSchool && (
             <div className="col-md-8 x">
-              <div className="logoOriginal"></div>
+              <Link to="/">
+                <div className="logoOriginal"></div>
+              </Link>
               <div className="accounts-content">
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
