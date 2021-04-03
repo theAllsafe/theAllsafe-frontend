@@ -25,6 +25,7 @@
   position: absolute;
   top: 30px;
   left: 30px;
+  z-index: 100;
 }
 .form-div i {
   margin-top: -2px !important;
