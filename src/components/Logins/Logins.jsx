@@ -168,6 +168,9 @@ const Logins = () => {
           )}
           {isVendor && (
             <div className="col-md-8 x">
+              <Link to="/">
+                <div className="logoOriginal"></div>
+              </Link>
               <div className="accounts-content" style={{ marginTop: '18px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
@@ -240,6 +243,9 @@ const Logins = () => {
 
           {isInstructor && (
             <div className="col-md-8 x">
+              <Link to="/">
+                <div className="logoOriginal"></div>
+              </Link>
               <div className="accounts-content" style={{ marginTop: '18px' }}>
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
@@ -312,6 +318,9 @@ const Logins = () => {
 
           {isAdmin && (
             <div className="col-md-8 x">
+              <Link to="/">
+                <div className="logoOriginal"></div>
+              </Link>
               <div className="accounts-content">
                 <div className="heading">
                   <h2 style={{ textAlign: 'center' }}>
