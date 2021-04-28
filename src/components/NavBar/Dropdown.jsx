@@ -28,10 +28,6 @@ const Dropdown = () => {
         21,
         22,
         23,
-        24,
-        25,
-        26,
-        27,
       ].map((el) => (
         <a className="tag">
           <p style={{ fontWeight: 500 }}>Category</p>
