@@ -6,6 +6,7 @@ import googleplus from './res/google.svg';
 import linkedin from './res/linkedin.svg';
 import close from '../NavBar/res/cancel.png';
 import { Link } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
 
 const Logins = () => {
   const [isSchool, setisSchool] = useState(true);
@@ -147,6 +148,9 @@ const Logins = () => {
                         />
                       </div>
                       <div className="mt-3">
+                        <Form.Group controlId="checkbox">
+                          <Form.Check type="checkbox" label="Remeber me" />
+                        </Form.Group>
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
@@ -221,6 +225,9 @@ const Logins = () => {
                         />
                       </div>
                       <div className="mt-3">
+                        <Form.Group controlId="checkbox">
+                          <Form.Check type="checkbox" label="Remeber me" />
+                        </Form.Group>
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
@@ -296,6 +303,9 @@ const Logins = () => {
                         />
                       </div>
                       <div className="mt-3">
+                        <Form.Group controlId="checkbox">
+                          <Form.Check type="checkbox" label="Remeber me" />
+                        </Form.Group>
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
@@ -371,6 +381,9 @@ const Logins = () => {
                         />
                       </div>
                       <div className="mt-3">
+                        <Form.Group controlId="checkbox">
+                          <Form.Check type="checkbox" label="Remeber me" />
+                        </Form.Group>
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"

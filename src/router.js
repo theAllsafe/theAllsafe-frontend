@@ -24,6 +24,7 @@ import CollectionWrapper from './components/BusinessSolution/CollectionWrapper';
 import ICollection from './components/BusinessSolution/Inventory/Collections';
 import POSCollection from './components/BusinessSolution/POS/Collections';
 import Inventory from './components/BusinessSolution/Inventory/InventoryMgmnt';
+import Terms from './components/TermsConditions/Terms';
 
 const BaseRoute = () => {
   return (
@@ -56,6 +57,7 @@ const BaseRoute = () => {
       <Route exact path="/privacy-policy" component={privacy} />
       <Route exact path="/accounts" component={Accounts} />
       <Route exact path="/logins" component={Logins} />
+      <Route exact path="/termsconditions" component={Terms} />
     </Switch>
   );
 };

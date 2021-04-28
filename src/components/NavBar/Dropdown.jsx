@@ -3,17 +3,32 @@ import React from 'react';
 const Dropdown = () => {
   return (
     <div className="dropdownMenu">
-      {[1, 2, 3, 4, 5, 6].map((el) => (
-        <div className="category">
-          <h5>
-            <i class="fab fa-bandcamp"></i> Category
-          </h5>
-
-          <p>Category 1</p>
-          <p>Category 2</p>
-          <p>Category 3</p>
-          <p>Category 4</p>
-        </div>
+      {[
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+      ].map((el) => (
+        <a className="tag">
+          <p style={{ fontWeight: 500 }}>Category</p>
+          <span className="leading"></span>
+        </a>
       ))}
     </div>
   );

@@ -4,6 +4,7 @@ import Card from './Card';
 import collection from './data';
 import HeadMenu from '../Headmenu/HeadMenu';
 import NavBar from '../../NavBar/NavBar';
+import Footer from '../../Footer/Footer';
 
 function POSCollection() {
   return (
@@ -20,7 +21,7 @@ function POSCollection() {
           <Card key={item.id} data={item} />
         ))}
       </div>
-      {/* <SafetyBanner /> */}
+      <Footer />
     </>
   );
 }

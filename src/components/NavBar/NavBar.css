@@ -87,18 +87,60 @@
   margin-top: 8px;
 }
 .dropdownMenu {
-  width: 700px;
-  height: 400px;
-  background-color: #fff;
+  width: 1200px;
+  height: 255px;
+  background-color: #3e84c5e1;
   position: absolute;
   top: 40px;
-  left: -210px;
+  left: -500px;
+  padding-bottom: 10px;
   z-index: 3;
   visibility: hidden;
   box-shadow: 0 5px 10px rgba(75, 75, 75, 0.46);
   transition: 0.2s;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+.dropdownMenu .tag {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: rgb(241, 241, 241);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  transition: box-shadow 0.15s ease-in;
+  font-weight: 700 !important;
+  text-transform: none;
+}
+
+.leading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background-color: gold;
+}
+.dropdownMenu .tag:hover {
+  background-color: #1372cce1;
+  color: #fff;
+  transition: all 0.1s;
+}
+
 .topnavbar .toggleDropdown {
   position: relative;
   cursor: pointer;
@@ -113,10 +155,7 @@
   opacity: 1;
   z-index: 5;
 }
-.dropdownMenu {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .category {
   padding: 15px 30px;
 }

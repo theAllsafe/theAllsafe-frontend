@@ -122,14 +122,16 @@ const RequestQuote = () => {
           </div>
         </div>
 
-        <label class="custom-file-upload">
-          <input type="file" />
-          <i className="ri-upload-2-fill"></i> Browse
-        </label>
+        <div className="flex-x">
+          <label class="custom-file-upload">
+            <input type="file" />
+            <i className="ri-upload-2-fill"></i> Browse
+          </label>
 
-        <Button className="btn btn-send" type="submit">
-          Send Message
-        </Button>
+          <Button className="btn btn-tas lg" type="submit">
+            Send Message
+          </Button>
+        </div>
       </Form>
     </div>
   );

@@ -137,7 +137,7 @@ function AndroidDevelopement() {
 
           <div className="section4">
             <div className="leftCard">
-              <h1>Web Development Frameworks</h1>
+              <h1>Android Development Frameworks</h1>
               <p style={{ fontSize: 16, letterSpacing: '1px' }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                 expedita fuga distinctio molestiae consequuntur impedit dolore
@@ -151,40 +151,40 @@ function AndroidDevelopement() {
             </div>
             <div className="techs">
               <div className="t_card">
-                <i class="devicon-php-plain colored"></i>
+                {/* <i class="devicon-php-plain colored"></i>
                 <div className="t_card_text">
                   <h3>php</h3>
-                </div>
+                </div> */}
               </div>
               <div className="t_card">
-                <i class="devicon-java-plain-wordmark"></i>
+                {/* <i class="devicon-java-plain-wordmark"></i>
                 <div className="t_card_text">
                   <h3>Java</h3>
-                </div>
+                </div> */}
               </div>
               <div className="t_card">
-                <i class="devicon-laravel-plain colored"></i>
+                {/* <i class="devicon-laravel-plain colored"></i>
                 <div className="t_card_text">
                   <h3>Laravel</h3>
-                </div>
+                </div> */}
               </div>
               <div className="t_card">
-                <i class="devicon-rails-plain-wordmark colored"></i>
+                {/* <i class="devicon-rails-plain-wordmark colored"></i>
                 <div className="t_card_text">
                   <h3>Ruby on Rails</h3>
-                </div>
+                </div> */}
               </div>
               <div className="t_card">
-                <i class="devicon-react-original colored"></i>
+                {/* <i class="devicon-react-original colored"></i>
                 <div className="t_card_text">
                   <h3>React JS</h3>
-                </div>
+                </div> */}
               </div>
               <div className="t_card">
-                <i class="devicon-react-original colored"></i>
+                {/* <i class="devicon-react-original colored"></i>
                 <div className="t_card_text">
                   <h3>React JS</h3>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

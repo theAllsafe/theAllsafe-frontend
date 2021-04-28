@@ -13,34 +13,43 @@ const HeadMenu = (props) => {
                 to="/"
                 className="active-link"
                 style={
-                  window.location.href === `${window.location.origin}/`
+                  window.location.href ===
+                  `${window.location.origin}/termsconditions`
                     ? { borderBottom: '2px solid #f8c73d' }
                     : null
                 }
               >
-                PRODUCT
+                Terms of Use
               </Link>
             </li>
             <li>
               <Link
-                to="/collections/"
+                to="/privacypolicy/"
                 className="active-link"
                 style={
                   window.location.href ===
-                  `${window.location.origin}/collections/`
+                  `${window.location.origin}/privacypolicy/`
                     ? { borderBottom: '2px solid #f8c73d' }
                     : null
                 }
                 // onSelect={clickcollection}
               >
-                COLLECTION
+                Privacy Policy
               </Link>
             </li>
 
             <li>
-              <a href="#!" className="active-link">
-                BUILD YOUR SOFTWARE
-              </a>
+              <Link
+                to="/"
+                className="active-link"
+                style={
+                  window.location.href === `${window.location.origin}/copyright`
+                    ? { borderBottom: '2px solid #f8c73d' }
+                    : null
+                }
+              >
+                Copyright
+              </Link>
             </li>
           </ul>
         </div>

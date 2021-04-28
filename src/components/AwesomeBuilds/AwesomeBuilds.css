@@ -1,8 +1,10 @@
 .builds-sec .heading h2 {
   margin-top: -100px;
 }
-.front_bannerimg {
+.front_banner img {
+  width: 850px;
   height: 430px;
+  object-fit: cover;
 }
 
 .builds-box {

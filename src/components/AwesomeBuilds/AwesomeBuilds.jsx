@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './AwesomeBuilds.css';
-import swap2 from './res/swap2.webp';
-import swap3 from './res/swap3.webp';
-import swap4 from './res/pico_1.png';
+import swap2 from './res/img1.jpg';
+import swap3 from './res/img2.jpg';
+import swap4 from './res/img3.jpg';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 export default function AwesomeBuilds() {
@@ -68,7 +68,7 @@ export default function AwesomeBuilds() {
             <div className="row">
               <div class="col-md-8">
                 <div class="front_banner">
-                  <img src={img} class="img-fluid" alt="" />
+                  <img src={img} />
                 </div>
               </div>
               <div class="col-md-4 awsm-content">

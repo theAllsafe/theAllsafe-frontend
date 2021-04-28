@@ -144,6 +144,9 @@
 input[type='file'] {
   display: none;
 }
+.lg {
+  width: 150px !important;
+}
 .custom-file-upload {
   border: 1px solid #ccc;
   display: block;

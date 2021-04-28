@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import Cards from './res/cards.PNG';
 
@@ -60,19 +61,13 @@ function Footer() {
                     onMouseOver={MouseOver}
                     onMouseOut={MouseOut}
                   >
-                    <a
-                      class=""
-                      id=""
-                      data-toggle=""
-                      aria-expanded="false"
-                      href="#!"
-                    >
+                    <Link to="/termsconditions">
                       Terms & Condition &nbsp;
                       <i
                         class={newclass}
                         style={{ color: 'white', fontSize: '0.6rem' }}
                       ></i>
-                    </a>
+                    </Link>
 
                     <div
                       class="dropdown-menu menu-drop"

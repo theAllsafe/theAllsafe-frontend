@@ -1,0 +1,28 @@
+.termsWrapper {
+  padding-top: 100px;
+  font-family: 'Roboto', sans-serif;
+}
+.termsWrapper h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.mainSection {
+  background-color: rgba(4, 182, 164, 0.082);
+}
+.termsOfUse {
+  text-transform: none !important;
+  font-weight: 700;
+}
+.contentText {
+  margin: 20px 100px;
+}
+.contentText p {
+  letter-spacing: 1px;
+}
+.published {
+  padding-top: 30px;
+  text-align: center;
+}
+.published p {
+  color: rgb(0, 153, 102);
+}
