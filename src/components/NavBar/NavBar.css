@@ -87,24 +87,24 @@
   margin-top: 8px;
 }
 .dropdownMenu {
-  width: 1200px;
-  height: 255px;
-  background-color: #3e84c5e1;
+  width: 100%;
+  height: 243px;
+  background-color: #3e84c5;
   position: absolute;
-  top: 40px;
-  left: -500px;
+  top: 70px;
+  left: 0px;
   padding-bottom: 10px;
   z-index: 3;
   visibility: hidden;
-  box-shadow: 0 5px 10px rgba(75, 75, 75, 0.46);
+  /* box-shadow: 0 5px 10px rgba(75, 75, 75, 0.46); */
   transition: 0.2s;
-  border-radius: 5px;
+  border-radius: 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .dropdownMenu .tag {
-  margin-top: 20px;
+  margin-top: 12px;
   margin-left: 10px;
   padding-top: 15px;
   padding-left: 20px;
@@ -142,7 +142,7 @@
 }
 
 .topnavbar .toggleDropdown {
-  position: relative;
+  /* position: relative; */
   cursor: pointer;
   font-size: 15px;
   text-transform: uppercase;
