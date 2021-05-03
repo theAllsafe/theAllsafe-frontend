@@ -15,6 +15,9 @@
 }
 
 .btn-exp {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
   border-radius: 30px;
   background: rgba(52, 106, 160, 1);
   color: white;
@@ -85,4 +88,5 @@
   border-radius: 4px;
   box-shadow: 0 2px 8px 0 rgba(112, 105, 105, 0.2);
   padding: 36px;
+  position: relative;
 }

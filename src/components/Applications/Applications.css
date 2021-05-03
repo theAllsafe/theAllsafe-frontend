@@ -32,6 +32,8 @@
   background-color: #316698;
   color: #fff;
   border-radius: 30px;
+  width: 130px;
+  height: 45px;
 }
 .view:hover {
   background: transparent;

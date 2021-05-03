@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 function NavBar() {
   const [newclass, setClass] = useState('fa fa-plus');
+  const [color, setColor] = useState('');
   const MouseOver = () => {
     setClass('fa fa-chevron-down');
+    setColor('red');
   };
   const MouseOut = () => {
     setClass('fa fa-plus');
+    setColor('');
   };
 
   return (
@@ -22,15 +25,34 @@ function NavBar() {
       <div className="navBox1">
         <ul>
           <li className="navbarLink" style={{ borderRight: '3px solid gold' }}>
-            <Link to="/business">Business</Link>
+            <Link
+              to="/business"
+              style={
+                window.location.pathname === '/business'
+                  ? { color: 'red' }
+                  : null
+              }
+            >
+              Business
+            </Link>
           </li>
           <li className="navbarLink" style={{ borderRight: '3px solid gold' }}>
-            <Link to="/applications">Applications</Link>
+            <Link
+              to="/applications"
+              style={
+                window.location.pathname === '/applications'
+                  ? { color: 'red' }
+                  : null
+              }
+            >
+              Applications
+            </Link>
           </li>
           <li
             className="toggleDropdown"
             onMouseOver={MouseOver}
             onMouseOut={MouseOut}
+            style={{ color: color }}
           >
             Overview <i className={newclass}></i>
             <Dropdown />
@@ -56,7 +78,14 @@ function NavBar() {
           <Link to="/accounts">
             <i className="fas fa-user-circle"></i>
           </Link>
-          <Link to="/contactus">
+          <Link
+            to="/contactus"
+            style={
+              window.location.pathname === '/contactus'
+                ? { color: 'red' }
+                : null
+            }
+          >
             <p className="contact">Contact Us</p>
           </Link>
         </div>
