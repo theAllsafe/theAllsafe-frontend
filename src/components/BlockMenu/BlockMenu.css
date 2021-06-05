@@ -62,7 +62,7 @@ a {
   z-index: -1;
   border-radius: 5px;
 }
-.blockmenu .menu:first-child ul {
+/* .blockmenu .menu:first-child ul {
   background: #113c68;
   height: 0;
   left: 35px !important;
@@ -77,8 +77,8 @@ a {
   text-align: left !important;
   list-style-type: none;
   padding-right: 10px;
-}
-.blockmenu .menu:last-child ul {
+} */
+/* .blockmenu .menu:last-child ul {
   background: #113c68;
   height: 0;
   left: -100px;
@@ -93,7 +93,7 @@ a {
   text-align: right;
   list-style-type: none;
   padding-right: 10px;
-}
+} */
 .blockmenu li {
   text-align: left;
   list-style-type: none;

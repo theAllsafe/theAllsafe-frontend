@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './HotDeals.css';
 
 import Footer from '../Footer/Footer';
@@ -6,37 +6,34 @@ import Footer from '../Footer/Footer';
 import SafetyBanner from '../SafetyBanner/SafetyBanner';
 import NavBar from '../NavBar/NavBar';
 import Card from './Card';
+import Loader from '../Loader';
+
+import axios from 'axios';
 
 function HotDeals() {
-  const data = [
-    {
-      productId: 1,
-      productName: 'Sample-1',
-      productDesc: 'Product Description...',
-      prices: [1499, 1599, 1999],
-    },
-    {
-      productId: 2,
-      productName: 'Sample-2',
-      productDesc: 'Product Description...',
-      prices: [1799, 1999, 2199],
-    },
-    {
-      productId: 3,
-      productName: 'Sample-3',
-      productDesc: 'Product Description...',
-      prices: [499, 799, 999],
-    },
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('https://tas-server.herokuapp.com/api/projects')
+      .then((res) => setData(res.data));
+  }, []);
+
+  const hotDeals = data.filter((el) => el.hotOfferItem.isHotOffer);
+
   return (
     <>
       <NavBar />
 
-      <div className="hotDeals">
-        {data.map((el) => (
-          <Card key={el.productId} data={el} />
-        ))}
-      </div>
+      {data.length ? (
+        <div className="hotDeals">
+          {hotDeals.map((el) => (
+            <Card key={el._id} data={el} />
+          ))}
+        </div>
+      ) : (
+        <Loader top={100} />
+      )}
       <SafetyBanner />
       <Footer />
     </>

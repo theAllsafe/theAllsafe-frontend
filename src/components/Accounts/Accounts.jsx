@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import './Accounts.css';
-import NavBar from '../NavBar/CustomNavbar/CustomNavbar';
 import close from '../NavBar/res/cancel.png';
 import { Link } from 'react-router-dom';
-import { Fade } from 'react-reveal';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { register } from '../../actions/userActions';
+import AlertMessage from '../Alert';
 
 const Accounts = () => {
-  const [isSchool, setisSchool] = useState(true);
-  const [isVendor, setisVendor] = useState(false);
-  const [isInstructor, setisInstructor] = useState(false);
+  const [isClient, setIsClient] = useState(true);
+  const [isCorporate, setisCorporate] = useState(false);
+  const [isBusinessPartner, setisBusinessPartner] = useState(false);
   const [isAdmin, setisAdmin] = useState(false);
+
   const [clientStyle, setclientStyle] = useState(null);
   const [corporateStyle, setcorporateStyle] = useState(null);
   const [businessStyle, setbusinessStyle] = useState(null);
   const [adminStyle, setadminStyle] = useState(null);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [message, setMessage] = useState('');
+
   useEffect(() => {
     setclientStyle({
       boxShadow: '0 0 10px 7px rgba(0, 0, 0, 0.03)',
@@ -62,28 +73,59 @@ const Accounts = () => {
     setbusinessStyle(null);
   };
   const schoolClick = () => {
-    setisSchool(true);
-    setisVendor(false);
-    setisInstructor(false);
+    setIsClient(true);
+    setisCorporate(false);
+    setisBusinessPartner(false);
     setisAdmin(false);
   };
   const vendorClick = () => {
-    setisVendor(true);
-    setisSchool(false);
-    setisInstructor(false);
+    setisCorporate(true);
+    setIsClient(false);
+    setisBusinessPartner(false);
     setisAdmin(false);
   };
   const instructorClick = () => {
-    setisInstructor(true);
-    setisVendor(false);
-    setisSchool(false);
+    setisBusinessPartner(true);
+    setisCorporate(false);
+    setIsClient(false);
     setisAdmin(false);
   };
   const adminClick = () => {
     setisAdmin(true);
-    setisInstructor(false);
-    setisVendor(false);
-    setisSchool(false);
+    setisBusinessPartner(false);
+    setisCorporate(false);
+    setIsClient(false);
+  };
+
+  const dispatch = useDispatch();
+
+  const userRegister = useSelector((state) => state.userRegister);
+  const { loading, error, userInfo } = userRegister;
+
+  const submitHandler = (e) => {
+    if (password !== confirmPassword) {
+      setMessage('Passwords do not match');
+      console.log('Passwords do not match');
+    } else {
+      dispatch(
+        register(
+          name,
+          email,
+          parseInt(mobile),
+          isClient,
+          isCorporate,
+          isBusinessPartner,
+          isAdmin,
+          password
+        )
+      );
+
+      setName('');
+      setEmail('');
+      setMobile('');
+      setPassword('');
+      setConfirmPassword('');
+    }
   };
   return (
     <>
@@ -184,7 +226,7 @@ const Accounts = () => {
               </div>
             </div>
           </div>
-          {isSchool && (
+          {isClient && (
             <div className="col-md-8 formContainer1">
               <div className="close">
                 <Link to="/">
@@ -198,7 +240,18 @@ const Accounts = () => {
                   </h2>
                 </div>
 
+                {/* Registration Sections */}
                 <div className="register-form-div" align="center">
+                  {error && <AlertMessage variant="danger" message={error} />}
+                  {message && (
+                    <AlertMessage variant="danger" message={message} />
+                  )}
+                  {userInfo && (
+                    <AlertMessage
+                      variant="success"
+                      message="User Successfully Registered"
+                    />
+                  )}
                   <div className="row">
                     <div className="col-md-12">
                       <div class="mb-3">
@@ -209,6 +262,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Full Name"
                           id="exampleInputEmail1"
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
@@ -222,6 +276,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Email"
                           id="exampleInputEmail1"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -234,6 +289,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Mobile Number"
                           id="exampleInputEmail1"
+                          onChange={(e) => setMobile(e.target.value)}
                         />
                       </div>
                     </div>
@@ -247,6 +303,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -260,6 +317,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Re-type Password"
                           id="exampleInputEmail1"
+                          onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                       </div>
                     </div>
@@ -268,6 +326,7 @@ const Accounts = () => {
                     <button
                       type="button"
                       class="btn btn-outline-primary accounts-btn"
+                      onClick={submitHandler}
                     >
                       Register
                     </button>
@@ -282,7 +341,7 @@ const Accounts = () => {
               </div>
             </div>
           )}
-          {isVendor && (
+          {isCorporate && (
             <div className="col-md-8 formContainer2">
               <div className="close">
                 <Link to="/">
@@ -297,6 +356,16 @@ const Accounts = () => {
                 </div>
 
                 <div className="register-form-div" align="center">
+                  {error && <AlertMessage variant="danger" message={error} />}
+                  {message && (
+                    <AlertMessage variant="danger" message={message} />
+                  )}
+                  {userInfo && (
+                    <AlertMessage
+                      variant="success"
+                      message="User Successfully Registered"
+                    />
+                  )}
                   <div className="row">
                     <div className="col-md-12">
                       <div class="mb-3">
@@ -307,6 +376,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Full Name"
                           id="exampleInputEmail1"
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
@@ -320,6 +390,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Email"
                           id="exampleInputEmail1"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -333,6 +404,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Mobile Number"
                             id="exampleInputEmail1"
+                            onChange={(e) => setMobile(e.target.value)}
                           />
                         </div>
                       </form>
@@ -347,6 +419,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -361,6 +434,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Re-type Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -370,6 +444,7 @@ const Accounts = () => {
                     <button
                       type="button"
                       class="btn btn-outline-primary accounts-btn"
+                      onClick={submitHandler}
                     >
                       Register
                     </button>
@@ -385,7 +460,7 @@ const Accounts = () => {
             </div>
           )}
 
-          {isInstructor && (
+          {isBusinessPartner && (
             <div className="col-md-8 formContainer3">
               <div className="close">
                 <Link to="/">
@@ -400,6 +475,16 @@ const Accounts = () => {
                 </div>
 
                 <div className="register-form-div" align="center">
+                  {error && <AlertMessage variant="danger" message={error} />}
+                  {message && (
+                    <AlertMessage variant="danger" message={message} />
+                  )}
+                  {userInfo && (
+                    <AlertMessage
+                      variant="success"
+                      message="User Successfully Registered"
+                    />
+                  )}
                   <div className="row">
                     <div className="col-md-12">
                       <form>
@@ -411,6 +496,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Full Name"
                             id="exampleInputEmail1"
+                            onChange={(e) => setName(e.target.value)}
                           />
                         </div>
                       </form>
@@ -426,6 +512,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Email"
                             id="exampleInputEmail1"
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                         </div>
                       </form>
@@ -440,6 +527,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Mobile Number"
                             id="exampleInputEmail1"
+                            onChange={(e) => setMobile(e.target.value)}
                           />
                         </div>
                       </form>
@@ -454,6 +542,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -468,6 +557,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Re-type Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -477,6 +567,7 @@ const Accounts = () => {
                     <button
                       type="button"
                       class="btn btn-outline-primary accounts-btn"
+                      onClick={submitHandler}
                     >
                       Register
                     </button>
@@ -506,6 +597,16 @@ const Accounts = () => {
                 </div>
 
                 <div className="register-form-div" align="center">
+                  {error && <AlertMessage variant="danger" message={error} />}
+                  {message && (
+                    <AlertMessage variant="danger" message={message} />
+                  )}
+                  {userInfo && (
+                    <AlertMessage
+                      variant="success"
+                      message="User Successfully Registered"
+                    />
+                  )}
                   <div className="row">
                     <div className="col-md-12">
                       <div class="mb-3">
@@ -516,6 +617,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Full Name"
                           id="exampleInputEmail1"
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
@@ -530,6 +632,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Email"
                             id="exampleInputEmail1"
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                         </div>
                       </form>
@@ -543,6 +646,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Mobile Number"
                           id="exampleInputEmail1"
+                          onChange={(e) => setMobile(e.target.value)}
                         />
                       </div>
                     </div>
@@ -555,6 +659,7 @@ const Accounts = () => {
                           class="form-control accounts-register-form"
                           placeholder="Password"
                           id="exampleInputEmail1"
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                       </div>
                     </div>
@@ -568,6 +673,7 @@ const Accounts = () => {
                             class="form-control accounts-register-form"
                             placeholder="Re-type Password"
                             id="exampleInputEmail1"
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                           />
                         </div>
                       </form>
@@ -577,6 +683,7 @@ const Accounts = () => {
                     <button
                       type="button"
                       class="btn btn-outline-primary accounts-btn"
+                      onClick={submitHandler}
                     >
                       Register
                     </button>

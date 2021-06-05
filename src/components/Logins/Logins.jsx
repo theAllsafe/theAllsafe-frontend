@@ -8,6 +8,10 @@ import close from '../NavBar/res/cancel.png';
 import { Link } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { login } from '../../actions/userActions';
+import AlertMessage from '../Alert';
+
 const Logins = () => {
   const [isSchool, setisSchool] = useState(true);
   const [isVendor, setisVendor] = useState(false);
@@ -88,6 +92,19 @@ const Logins = () => {
     setisVendor(false);
     setisSchool(false);
   };
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { loading, userInfo, error } = userLogin;
+
+  const submitHandler = () => {
+    dispatch(login(email, password));
+  };
+
   return (
     <>
       {/* <NavBar /> */}
@@ -95,6 +112,7 @@ const Logins = () => {
         <div className="row">
           {isSchool && (
             <div className="col-md-8 x">
+              {error && <AlertMessage variant="danger" message={error} />}
               <Link to="/">
                 <div className="logoOriginal"></div>
               </Link>
@@ -134,6 +152,7 @@ const Logins = () => {
                           placeholder="Email"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div class="mb-3">
@@ -145,6 +164,7 @@ const Logins = () => {
                           placeholder="Password"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                       </div>
                       <div className="mt-3">
@@ -154,6 +174,7 @@ const Logins = () => {
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
+                          onClick={submitHandler}
                         >
                           Login
                         </button>
@@ -172,6 +193,13 @@ const Logins = () => {
           )}
           {isVendor && (
             <div className="col-md-8 x">
+              {error && <AlertMessage variant="danger" message={error} />}
+              {userInfo && (
+                <AlertMessage
+                  variant="success"
+                  message="User Successfully Registered"
+                />
+              )}
               <Link to="/">
                 <div className="logoOriginal"></div>
               </Link>
@@ -211,6 +239,7 @@ const Logins = () => {
                           placeholder="Email"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div class="mb-3">
@@ -222,6 +251,7 @@ const Logins = () => {
                           placeholder="Password"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                       </div>
                       <div className="mt-3">
@@ -231,6 +261,7 @@ const Logins = () => {
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
+                          onClick={submitHandler}
                         >
                           Login
                         </button>
@@ -250,6 +281,13 @@ const Logins = () => {
 
           {isInstructor && (
             <div className="col-md-8 x">
+              {error && <AlertMessage variant="danger" message={error} />}
+              {userInfo && (
+                <AlertMessage
+                  variant="success"
+                  message="User Successfully Registered"
+                />
+              )}
               <Link to="/">
                 <div className="logoOriginal"></div>
               </Link>
@@ -289,6 +327,7 @@ const Logins = () => {
                           placeholder="Email"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div class="mb-3">
@@ -300,6 +339,7 @@ const Logins = () => {
                           placeholder="Password"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                       </div>
                       <div className="mt-3">
@@ -309,6 +349,7 @@ const Logins = () => {
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
+                          onClick={submitHandler}
                         >
                           Login
                         </button>
@@ -328,6 +369,13 @@ const Logins = () => {
 
           {isAdmin && (
             <div className="col-md-8 x">
+              {error && <AlertMessage variant="danger" message={error} />}
+              {userInfo && (
+                <AlertMessage
+                  variant="success"
+                  message="User Successfully Registered"
+                />
+              )}
               <Link to="/">
                 <div className="logoOriginal"></div>
               </Link>
@@ -367,6 +415,7 @@ const Logins = () => {
                           placeholder="Email"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                       <div class="mb-3">
@@ -378,6 +427,7 @@ const Logins = () => {
                           placeholder="Password"
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                       </div>
                       <div className="mt-3">
@@ -387,6 +437,7 @@ const Logins = () => {
                         <button
                           type="button"
                           class="btn btn-outline-primary accounts-btn"
+                          onClick={submitHandler}
                         >
                           Login
                         </button>
@@ -424,7 +475,7 @@ const Logins = () => {
                       }}
                       className="fa fa-user fa-2x"
                     ></i>
-                    <h3>Client Registration</h3>
+                    <h3>Client Login</h3>
                   </div>
                 </div>
                 <div onClick={vendorClick}>
@@ -439,7 +490,7 @@ const Logins = () => {
                       }}
                       className="fa fa-user fa-2x"
                     ></i>
-                    <h3>Corporate Registration</h3>
+                    <h3>Corporate Login</h3>
                   </div>
                 </div>
 
@@ -455,7 +506,7 @@ const Logins = () => {
                       }}
                       className="fa fa-user fa-2x"
                     ></i>
-                    <h3>Business Partner Registration</h3>
+                    <h3>Business Partner Login</h3>
                   </div>
                 </div>
                 <div onClick={adminClick}>
@@ -468,7 +519,7 @@ const Logins = () => {
                       style={{ color: adminStyle ? adminStyle['green'] : '' }}
                       className="fa fa-user fa-2x"
                     ></i>
-                    <h3>Admin Registration</h3>
+                    <h3>Admin Login</h3>
                   </div>
                 </div>
               </div>

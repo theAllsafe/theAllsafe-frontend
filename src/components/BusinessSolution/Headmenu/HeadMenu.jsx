@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './style.css';
 import { Link } from 'react-router-dom';
 
 const HeadMenu = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get('https://tas-server.herokuapp.com/api/category')
+      .then((res) => setData(res.data));
+  }, []);
+  const category = data.filter((el) => el.categoryName === 'Business Solution');
+
+  const subcategory = category.length && category[0].subCategories;
+
   return (
     <section class="head_menu custom">
       <div class="row">
@@ -19,7 +30,7 @@ const HeadMenu = () => {
                     : null
                 }
               >
-                INVENTORY MANAGEMENT
+                {subcategory && subcategory[0].subCategoryName}
               </Link>
             </li>
             <li>
@@ -34,7 +45,7 @@ const HeadMenu = () => {
                 }
                 // onSelect={clickcollection}
               >
-                POS SYSTEM
+                {subcategory && subcategory[1].subCategoryName}
               </Link>
             </li>
 

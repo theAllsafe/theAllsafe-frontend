@@ -1,14 +1,21 @@
-import React from 'react';
-import collection from '../Collections/data';
+import React, { useState, useEffect } from 'react';
 import Card from '../Collections/Card';
 
+import axios from 'axios';
+
 const RelatedDeals = () => {
-  let latestCollection = collection.slice(0, 3);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get('https://tas-server.herokuapp.com/api/projects')
+      .then((res) => setData(res.data));
+  }, []);
+  const collection = data.filter((el) => el.collectionItem);
 
   return (
     <div className="x_container">
-      {latestCollection.map((item) => (
-        <Card width={330} key={item.id} data={item} />
+      {collection.map((item) => (
+        <Card width={330} key={item._id} data={item} />
       ))}
     </div>
   );

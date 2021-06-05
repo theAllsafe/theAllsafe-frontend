@@ -23,6 +23,7 @@ import Logins from './components/Logins/Logins';
 import CollectionWrapper from './components/BusinessSolution/CollectionWrapper';
 import ICollection from './components/BusinessSolution/Inventory/Collections';
 import POSCollection from './components/BusinessSolution/POS/Collections';
+import POS from './components/BusinessSolution/POS/POS';
 import Inventory from './components/BusinessSolution/Inventory/InventoryMgmnt';
 import Terms from './components/TermsConditions/Terms';
 
@@ -36,8 +37,9 @@ const BaseRoute = () => {
 
       <Route exact path="/businessSolution" component={CollectionWrapper} />
       <Route exact path="/collection/inventory" component={ICollection} />
-      <Route exact path="/inventory" component={Inventory} />
+      <Route exact path="/inventory/:id" component={Inventory} />
       <Route exact path="/collection/pos" component={POSCollection} />
+      <Route exact path="/pos/:id" component={POS} />
 
       <Route exact path="/contactus" component={ContactUs} />
       <Route exact path="/applications" component={Applications} />
